@@ -24,7 +24,7 @@ class LinkedList {
         }
         current.next = node;
       }
-      console.log(this.head);
+      // console.log(this.head);
       return this.head;
     }
   }
