@@ -1,24 +1,24 @@
-# The Junior Dev Struggle Bus Meetup | 10 May 2021
+# The Junior Dev Struggle Bus Meetup | 10 May 2021 | Technical Interview Practice
 
-## Technical Interview Practice
+## Problem Domain
 
-### Problem Domain
 Write a function that takes in a string and a charachter and returns the number of times that character occurs in the string.
-
-Hint: Write the function in such a way that it can count up any given character or return null for an excluded character.
 
 Input: string, char
 Output: integer = num of times char is in string
 
-Edge Cases:
+### Edge Cases
 
-- Account for the difference between upper and lowercase letters.
+- [x] Account for the difference between upper and lowercase letters, treating them as the same character.
+- [x] Account for an empty string and/or and empty char argument.
+- [x] Account for a given string exactly matching a given char argument.
+- [x] Account for the case of the given string not including the given char.
 
 ### Sample
 
-> string: 'The quick brown fox jumps over the lazy dog.'
+> Sample string: 'The quick brown fox jumps over the lazy dog.'
 > Sample char: 'r'
-> Smaple Output: 2
+> Sample Output: 2
 
 ### Solutions
 
@@ -42,3 +42,6 @@ Edge Cases:
 - Big(O) time: one while loop = O(n);
 - Big(O) space: created one hashmap of known size = O(1);
 
+## Preliminary Conclusion Pending a Better Understanding of Big(O)
+
+It seems that solution 3 may be the cleanest bit of code, while remaining nearly as equally efficient as any other solution, including the hashmap, which requires the most amount of code.
