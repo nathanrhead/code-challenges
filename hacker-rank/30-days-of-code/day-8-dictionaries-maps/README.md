@@ -1,4 +1,4 @@
-# Hacker Rank 30 Days of Code Challenges: Day 8: Dictionaries and Maps(Easy)
+# Hacker Rank 30 Days of Code Challenges: Day 8: Dictionaries and Maps (Easy)
 
 ## Objective
 
