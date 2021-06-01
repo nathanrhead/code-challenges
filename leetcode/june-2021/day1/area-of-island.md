@@ -13,3 +13,5 @@ This solution (see its source, below) uses nested for-loops to traverse the matr
 ## Sources
 
 This solution was presented on [YouTube](https://www.youtube.com/watch?v=W8VuDt0eb5c) by Kevin Naughton Jr.
+
+## ![Whiteboard](../whiteboards/leetcode-june2021-day1-whiteboard.png)
