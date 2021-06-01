@@ -18,6 +18,12 @@ const grid = [
   [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
 ];
 
+const grid1 = [
+  [1,1,1],
+  [1,1,1],
+  [1,1,1]
+]
+
 describe ('the solution to leetcode\'s challenge to find the area of the largest \"island\" in a matrix', () => {
 
   it ('returns 0 when passed an empty matrix', () => {
@@ -30,5 +36,8 @@ describe ('the solution to leetcode\'s challenge to find the area of the largest
 
   it ('returns the sum of all the ones--the area--of the largest \"island\" in the matrix', () => {
     expect(maxArea(grid)).toEqual(6);
+    expect(maxArea(grid1)).toEqual(9);
   });
+
+  
 })
