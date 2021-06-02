@@ -35,4 +35,4 @@ rec2[0] <= rec2[2] and rec2[1] <= rec2[3]
 
 The solution to this problem was provided by Leetcode as one of two, this one using the relative positions of each rectangle to determine whether rec1 is fully left of, right of, below, or above rec2. (The other solution compares the areas of the rectangles and is also included in the code). 
 
-### ![Whiteboard](../whiteboards/overlapping-triangle-whiteboard.png)
+### ![Whiteboard](../../assets/whiteboards/overlapping-triangle-whiteboard.png)
