@@ -33,6 +33,10 @@ rec2[0] <= rec2[2] and rec2[1] <= rec2[3]
 
 ### Sources
 
-The solution to this problem was provided by Leetcode as one of two, this one using the relative positions of each rectangle to determine whether rec1 is fully left of, right of, below, or above rec2. (The other solution compares the areas of the rectangles and is also included in the code). 
+The solutions to this problem were provided by Leetcode.
+
+Solution one uses the relative positions of each rectangle to determine whether rec1 is fully left of, right of, below, or above rec2. 
+
+Solution two is based on area, comparing, for width, the smaller of the largest x-coordinates with the larger of the smallest x-coordinates and, for height, the same for the y-coordinates. If the smaller of the largest is larger than the larger of the smallest, the area is positive and there is overlap. (This solution is not shown on the whiteboard, yet.) 
 
 ### ![Whiteboard](../../assets/whiteboards/overlapping-triangle-whiteboard.png)
