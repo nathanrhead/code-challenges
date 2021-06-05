@@ -45,4 +45,4 @@ Stretch Goal: solve the problem using O(s2.length) space.
 
 ## Sources
 
-
+This one-function solution is based on that of Leetcode's approach 2 of four. While the two-function leetcode solution had a memoization feature that maintained a record of which letters had been visited, stored in a 2d array, it turns out that that feature was unnecessary for this challenge. The solution, as presented here, passed all 104 tests without the memoization feature.
