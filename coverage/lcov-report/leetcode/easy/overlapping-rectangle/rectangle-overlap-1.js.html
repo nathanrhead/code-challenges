@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for leetcode/june-2021/day1/max-area.js</title>
+    <title>Code coverage report for leetcode/easy/overlapping-rectangle/rectangle-overlap-1.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">leetcode/june-2021/day1</a> max-area.js</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">leetcode/easy/overlapping-rectangle</a> rectangle-overlap-1.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.74% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>18/19</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.89% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/9</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
@@ -76,80 +76,44 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">134x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">270x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">34x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-function islandArea(grid) {
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!grid) <span class="cstat-no" title="statement not covered" >return 0;</span>
+// This is one of two solutions provide by Leetcode, which checks the position of each rectangle relative to the other, returning false if there is no overlap (e.g., rec1 is right, left, above, or below rec2) and true otherwise.
 &nbsp;
-  let maxArea = 0;
-  
-  for (let i = 0; i &lt; grid.length; i++) {
-    for (let j = 0; j &lt; grid[i].length; j++) {
-     maxArea = Math.max(maxArea, area(i, j, grid));
-    }
-  }
-  return maxArea;
-}
+const isRectangleOverlap = (rec1, rec2) =&gt; {
+  // check if either rectangle is actually a line, since a line cannot have postivie overlap anywhere
+      if (rec1[0] === rec1[2] || rec1[1] === rec1[3] ||
+          rec2[0] === rec2[2] || rec2[1] === rec2[3]) {
+          return false;
+      }
 &nbsp;
-// Depth-first search function (used for trees and graphs)
-function area(i, j, grid) {
-  if (i &lt; 0 || i &gt;= grid.length || j &lt; 0 || j &gt;= grid[i].length || grid[i][j] === 0) return 0;
+      // Return false if rec1 is left, right, below or above rec2; otherwise, true;
+      return !(rec1[2] &lt;= rec2[0] ||   // fully left of
+               rec1[3] &lt;= rec2[1] ||  // fully below
+               rec1[0] &gt;= rec2[2] ||  // fully right of
+               rec1[1] &gt;= rec2[3]);    // fully above
+};
 &nbsp;
-  grid[i][j] = 0; // Set the value of the grid at [i][j] to zero in order to avoid counting it twice.
-  let count = 1
-  count += area(i+1, j, grid);
-  count += area(i-1, j, grid);
-  count += area(i, j-1, grid);
-  count += area(i, j+1, grid);
-  // console.log({i}, {j});
-  // console.log({count});
-  return count;
-}
-&nbsp;
-module.exports = islandArea;
+module.exports = isRectangleOverlap;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

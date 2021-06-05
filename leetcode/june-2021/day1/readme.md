@@ -8,7 +8,7 @@ Assume that all four edges of the grid are surrounded by water.
 
 ## Notes
 
-This solution (see its source, below) uses nested for-loops to traverse the matrix's rows and columns in search of its islands (ones) and recursion to generate a stack of horizontally and vertically connected ones, which is sums as it pops each function off the stack, returning a counter to the original function, which returns the area of the largest "island."
+This solution (see its source, below) uses nested for-loops to traverse the matrix's rows and columns in search of its islands (ones) and recursion to generate a stack of horizontally and vertically connected ones, which it sums as it pops each function off the stack, returning a counter to the original function, which returns the area of the largest "island."
 
 ## Sources
 

@@ -49,8 +49,8 @@ Space complexity: \mathcal{O}(m \cdot n)O(m⋅n) to keep double array memo.
 
 * Time: O(m * n), m = s1.length, n = s2.length
 
-### ![whiteboard]()
+<!-- ### ![whiteboard]() -->
 
 ## Sources
 
-This one-function solution is based on that of Leetcode's approach 2 of four. While the two-function leetcode solution had a memoization feature that maintained a record of which letters had been visited, stored in a 2d array, it turns out that that feature was unnecessary for this challenge, reducing big O for space from O(m * n) to O(1). The solution, as presented here, passed all 104 tests without the memoization feature.
+This one-function solution is based on that of Leetcode's approach two of four. While the two-function leetcode solution had a memoization feature that maintained a record of which letters had been visited, stored in a 2d array, it turns out that that feature was unnecessary for this challenge. Removing it reduced big O for space from O(m * n) to O(1). The solution, as presented here, passed all 104 tests without the memoization feature.

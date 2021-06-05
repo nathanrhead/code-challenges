@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for leetcode/june-2021/day1/max-area.js</title>
+    <title>Code coverage report for leetcode/june-2021/day2/interleaving-strings.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">leetcode/june-2021/day1</a> max-area.js</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">leetcode/june-2021/day2</a> interleaving-strings.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.74% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>18/19</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.89% </span>
+                <span class="strong">94.74% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/9</span>
+                <span class='fraction'>18/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -80,76 +80,52 @@
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">134x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<a name='L24'></a><a href='#L24'>24</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">270x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
 <span class="cline-any cline-yes">34x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">34x</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">25x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-function islandArea(grid) {
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!grid) <span class="cstat-no" title="statement not covered" >return 0;</span>
+function isInterleave(s1, s2, s3, i=0, j=0, k=0) {
+  // The length of s3 must equal the sum of the lengths of s1 and s2 in order for the function to be true.
+  if (s1.length + s2.length !== s3.length) return false;
 &nbsp;
-  let maxArea = 0;
-  
-  for (let i = 0; i &lt; grid.length; i++) {
-    for (let j = 0; j &lt; grid[i].length; j++) {
-     maxArea = Math.max(maxArea, area(i, j, grid));
-    }
-  }
-  return maxArea;
-}
+// If we've reached the end of s1, there's no need to iterate through the remainder of s2, but rather only to check whether it matches the remainder of s3.
+  if (i === s1.length) return s2.slice(j) === s3.slice(k) ? true : false;
 &nbsp;
-// Depth-first search function (used for trees and graphs)
-function area(i, j, grid) {
-  if (i &lt; 0 || i &gt;= grid.length || j &lt; 0 || j &gt;= grid[i].length || grid[i][j] === 0) return 0;
+// If we've reached the end of s2, there's no need to iterate through the remainder of s1, but rather only to check whether it matches the remainder of s3.
+  if (j === s2.length) return s1.slice(i) === s3.slice(k) ? true : <span class="branch-1 cbranch-no" title="branch not covered" >false;</span>
 &nbsp;
-  grid[i][j] = 0; // Set the value of the grid at [i][j] to zero in order to avoid counting it twice.
-  let count = 1
-  count += area(i+1, j, grid);
-  count += area(i-1, j, grid);
-  count += area(i, j-1, grid);
-  count += area(i, j+1, grid);
-  // console.log({i}, {j});
-  // console.log({count});
-  return count;
-}
+  // Setting the base line boolean value.
+  let answer = false;
 &nbsp;
-module.exports = islandArea;
+  // Looking for a letter to match &amp;&amp; the function at index + 1 of the string with the match to return true, which will happen once the index equals the length of the string. 
+  if (s3.charAt(k) === s1.charAt(i) &amp;&amp; isInterleave(s1, s2, s3, i + 1, j, k + 1)
+    || s3.charAt(k) === s2.charAt(j) &amp;&amp; isInterleave(s1, s2, s3, i, j + 1, k + 1)) answer = true;
+&nbsp;
+  return answer;
+};
+&nbsp;
+module.exports = isInterleave;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
