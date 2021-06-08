@@ -43,8 +43,6 @@ Stretch Goal: solve the problem using O(s2.length) space.
 
 ### Big O
 
-Space complexity: \mathcal{O}(m \cdot n)O(m⋅n) to keep double array memo.
-
 * Space: O(1) for the variable created to hold the answer.
 
 * Time: O(m * n), m = s1.length, n = s2.length

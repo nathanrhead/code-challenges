@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/20</span>
+                <span class='fraction'>23/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">21.43% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/14</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.85% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/13</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -82,27 +82,37 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">100x</span>
+<span class="cline-any cline-yes">94x</span>
+<span class="cline-any cline-yes">80x</span>
+<span class="cline-any cline-yes">53x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">100x</span>
+<span class="cline-any cline-yes">100x</span>
+<span class="cline-any cline-yes">100x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">100x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -111,27 +121,32 @@
 &nbsp;
 // My solution to FizzBuzz:
 const fizzBuzz = () =&gt; {
+  let answer = [];
   for (let i = 1; i &lt;= 100; i++) {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (i % 15 === 0) <span class="cstat-no" title="statement not covered" >return 'FizzBuzz';</span>
-    else <span class="missing-if-branch" title="if path not taken" >I</span>if (i % 5 === 0) <span class="cstat-no" title="statement not covered" >return 'Buzz';</span>
-    else <span class="missing-if-branch" title="if path not taken" >I</span>if (i % 3 === 0) <span class="cstat-no" title="statement not covered" >return 'Fizz';</span>
-    else return i;
+    if (i % 15 === 0) answer.push('FizzBuzz');
+    else if (i % 5 === 0) answer.push('Buzz');
+    else if (i % 3 === 0) answer.push('Fizz');
+    else answer.push(i);
   };
+  // console.log({answer});
+  return answer;
 }
 &nbsp;
 // The author's solution to FizzBuzz:
-function <span class="fstat-no" title="function not covered" >fizzBuzzSolution(</span>) {
-<span class="cstat-no" title="statement not covered" >  for (let n = <span class="cstat-no" title="statement not covered" >1;</span> n &lt;= 100; n++) {</span>
-  let output = <span class="cstat-no" title="statement not covered" >'';</span>
-<span class="cstat-no" title="statement not covered" >  if (n % 3 == 0) <span class="cstat-no" title="statement not covered" >output += 'Fizz';</span></span>
-<span class="cstat-no" title="statement not covered" >  if (n % 5 == 0) <span class="cstat-no" title="statement not covered" >output += 'Buzz';</span></span>
-<span class="cstat-no" title="statement not covered" >  console.log(output || n);</span>
-<span class="cstat-no" title="statement not covered" >  return output || n; </span>
+function fizzBuzzSolution() {
+  let answer = [];
+  for (let n = 1; n &lt;= 100; n++) {
+  let output = '';
+  if (n % 3 == 0) output += 'Fizz';
+  if (n % 5 == 0) output += 'Buzz';
+  // console.log(output || n);
+  answer.push(output || n);
   };
+  return answer;
 }
 // module.exports = { fizzBuzz, fizzBuzzSolution };
 &nbsp;
-module.exports = fizzBuzz;
+module.exports = { fizzBuzz, fizzBuzzSolution };
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -139,7 +154,7 @@ module.exports = fizzBuzz;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Jun 07 2021 20:12:30 GMT-0700 (Pacific Daylight Time)
+                at Tue Jun 08 2021 13:06:52 GMT-0700 (Pacific Daylight Time)
             </div>
         </div>
         <script src="prettify.js"></script>

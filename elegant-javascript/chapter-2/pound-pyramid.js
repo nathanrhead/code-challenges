@@ -5,15 +5,17 @@ function poundPyramid() {
   let symbol = '#';
   for (let i = 0; i < 7; i++) {
     console.log(symbol);
-    symbol+='#';
+    symbol+= '#';
   };
+  console.log(symbol);
 }
 // poundPyramid();
 
 // This is the author's solution to the pyramid task:
 function poundPyramidSolution() {
-  for (let line = "#"; line.length < 8; line += "#")
-    console.log(line);
+  for (let line = "#"; line.length < 8; line += "#") console.log(line);
   };
   // poundPyramidSolution();
+
+  module.exports = { poundPyramid, poundPyramidSolution };
   

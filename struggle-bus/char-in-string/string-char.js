@@ -3,8 +3,7 @@
 const Hashmap = require('./hashtable');
 
 // Solution 1: using .split() and .filter()
-/*
-function countChar(string, char) {
+function countChar1(string, char) {
   if (!string || !char) return 0;
   char = char.toLowerCase();
   if (string === char) return 1;
@@ -12,11 +11,9 @@ function countChar(string, char) {
   const filteredArray = array.filter(letter => letter === char);
   return filteredArray.length;  
 }
-*/
 
 // Solution 2: using .split() and .reduce()
-/*
-function countChar(string, char) {
+function countChar2(string, char) {
   if (!string || !char) return 0;
   char.toLowerCase();
   const array = string.toLowerCase().split('');
@@ -25,26 +22,25 @@ function countChar(string, char) {
     return acc;
   }, 0);
 }
-*/
 
 // Solution 3: using a for loop without split
-// function countChar(string, char) {
-//   // Error and edge-case handling
-//   if (!string || !char) return 0;
-//   char = char.toLowerCase(); 
-//   string = string.toLowerCase();
-//   if (string === char) return 1;
-//   if (!string.includes(char)) return 0;
+function countChar3(string, char) {
+  // Error and edge-case handling
+  if (!string || !char) return 0;
+  char = char.toLowerCase(); 
+  string = string.toLowerCase();
+  if (string === char) return 1;
+  if (!string.includes(char)) return 0;
 
-//   let count = 0;
-//   for (let i = 0; i < string.length; i++) {
-//     if (string[i] === char) count++;
-//   }
-//   return count;
-// }
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === char) count++;
+  }
+  return count;
+}
 
 // Solution 4: Using a for-loop and a hashtable
-function countChar(string, char) {
+function countChar4(string, char) {
   // Error and edge-case handling
   if (!string || !char) return 0;
   char = char.toLowerCase(); 
@@ -72,4 +68,4 @@ function countChar(string, char) {
 }
 
 
-module.exports = countChar;
+module.exports = { countChar1, countChar2, countChar3, countChar4 };

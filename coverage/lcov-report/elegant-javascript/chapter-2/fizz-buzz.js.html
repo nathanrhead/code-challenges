@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for leetcode/easy/overlapping-rectangle/rectangle-overlap-1.js</title>
+    <title>Code coverage report for elegant-javascript/chapter-2/fizz-buzz.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../prettify.css" />
-    <link rel="stylesheet" href="../../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">leetcode/easy/overlapping-rectangle</a> rectangle-overlap-1.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">elegant-javascript/chapter-2</a> fizz-buzz.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -76,20 +76,38 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">100x</span>
+<span class="cline-any cline-yes">94x</span>
+<span class="cline-any cline-yes">80x</span>
+<span class="cline-any cline-yes">53x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">100x</span>
+<span class="cline-any cline-yes">100x</span>
+<span class="cline-any cline-yes">100x</span>
+<span class="cline-any cline-yes">100x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -97,23 +115,32 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-// This is one of two solutions provide by Leetcode, which checks the position of each rectangle relative to the other, returning false if there is no overlap (e.g., rec1 is right, left, above, or below rec2) and true otherwise.
+// My solution to FizzBuzz:
+const fizzBuzz = () =&gt; {
+  let answer = [];
+  for (let i = 1; i &lt;= 100; i++) {
+    if (i % 15 === 0) answer.push('FizzBuzz');
+    else if (i % 5 === 0) answer.push('Buzz');
+    else if (i % 3 === 0) answer.push('Fizz');
+    else answer.push(i);
+  };
+  // console.log({answer});
+  return answer;
+}
 &nbsp;
-const isRectangleOverlap = (rec1, rec2) =&gt; {
-  // check if either rectangle is actually a line, since a line cannot have postivie overlap anywhere
-      if (rec1[0] === rec1[2] || rec1[1] === rec1[3] ||
-          rec2[0] === rec2[2] || rec2[1] === rec2[3]) {
-          return false;
-      }
+// The author's solution to FizzBuzz:
+function fizzBuzzSolution() {
+  let answer = [];
+  for (let n = 1; n &lt;= 100; n++) {
+  let output = '';
+  if (n % 3 == 0) output += 'Fizz';
+  if (n % 5 == 0) output += 'Buzz';
+  console.log(output || n);
+  };
+}
+// module.exports = { fizzBuzz, fizzBuzzSolution };
 &nbsp;
-      // Return false if rec1 is left, right, below or above rec2; otherwise, true;
-      return !(rec1[2] &lt;= rec2[0] ||   // fully left of
-               rec1[3] &lt;= rec2[1] ||  // fully below
-               rec1[0] &gt;= rec2[2] ||  // fully right of
-               rec1[1] &gt;= rec2[3]);    // fully above
-};
-&nbsp;
-module.exports = isRectangleOverlap;
+module.exports = { fizzBuzz, fizzBuzzSolution };
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -124,14 +151,14 @@ module.exports = isRectangleOverlap;
                 at Tue Jun 08 2021 12:46:21 GMT-0700 (Pacific Daylight Time)
             </div>
         </div>
-        <script src="../../../prettify.js"></script>
+        <script src="../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../../sorter.js"></script>
-        <script src="../../../block-navigation.js"></script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
     </body>
 </html>
     
