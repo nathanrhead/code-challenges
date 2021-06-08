@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623182812729" clover="3.2.0">
-  <project timestamp="1623182812729" name="All files">
-    <metrics statements="32" coveredstatements="31" conditionals="14" coveredconditionals="14" methods="5" coveredmethods="4" elements="51" coveredelements="49" complexity="0" loc="32" ncloc="32" packages="1" files="3" classes="3"/>
+<coverage generated="1623188573950" clover="3.2.0">
+  <project timestamp="1623188573950" name="All files">
+    <metrics statements="39" coveredstatements="33" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="4" elements="61" coveredelements="53" complexity="0" loc="39" ncloc="39" packages="1" files="3" classes="3"/>
     <file name="chessboard.js" path="/Users/Rhead/Documents/Projects/code-challenges/elegant-javascript/chapter-2/chessboard.js">
       <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="6" count="1" type="stmt"/>
@@ -34,14 +34,21 @@
       <line num="30" count="1" type="stmt"/>
     </file>
     <file name="pound-pyramid.js" path="/Users/Rhead/Documents/Projects/code-challenges/elegant-javascript/chapter-2/pound-pyramid.js">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="7" type="stmt"/>
-      <line num="8" count="7" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
+      <metrics statements="14" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="1"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
       <line num="20" count="1" type="stmt"/>
+      <line num="21" count="7" type="stmt"/>
+      <line num="22" count="49" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="7" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

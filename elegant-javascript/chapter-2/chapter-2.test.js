@@ -4,9 +4,7 @@
 
 const chessboard = require('./chessboard');
 const fizzBuzz = require('./fizz-buzz');
-const fizzBuzzSolution = require('./fizz-buzz');
 const poundPyramid = require('./pound-pyramid');
-const poundPyramidSolution = require('./pound-pyramid');
 
 
 describe ('solutions to the chessboard code challenge', () => {
@@ -39,10 +37,12 @@ describe ('solutions to the fizz-buzz code challenge', () => {
       97,     98,     'Fizz',     'Buzz'
     ];
     expect(fizzBuzz.fizzBuzz()).toEqual(answer);
-    expect(fizzBuzzSolution.fizzBuzzSolution()).toEqual(answer);
+    expect(fizzBuzz.fizzBuzzSolution()).toEqual(answer);
   });
 })
 
 describe ('solutions to the pound-pyramid code challenge', () => {
-  expect(poundPyramid.poundPyramid()).toBe('string');
+  it('returns the expected pyramid of pounds as a string', () => {
+    expect(poundPyramid.poundPyramidTwo()).toEqual('#\n##\n###\n####\n#####\n######\n#######\n');
+  });
 })
