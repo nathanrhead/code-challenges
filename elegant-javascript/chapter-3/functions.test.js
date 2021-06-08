@@ -3,7 +3,6 @@
 const Functions = require('./functions');
 
 describe ('exercises on functions from chapter three of Eloquent JavaScript', () => {
-
   it ('is exercise one and it takes two integers and returns the smaller of the two', () => {
     expect (Functions.min(0, 10)).toEqual(0);
     expect (Functions.min(0, -10)).toEqual(-10);

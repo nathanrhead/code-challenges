@@ -3,7 +3,8 @@
 // Tests I wrote for solutions to chapter two exercises from Eloquent JavaScript
 
 const chessboard = require('./chessboard');
-const fizzBuzz = require('./fizz-buzz');
+const { fizzBuzz } = require('./fizz-buzz');
+const { fizzBuzzSolution } = require('./fizz-buzz');
 const poundPyramid = require('./pound-pyramid');
 
 
@@ -36,8 +37,8 @@ describe ('solutions to the fizz-buzz code challenge', () => {
       91,     92,     'Fizz',     94,     'Buzz', 'Fizz',
       97,     98,     'Fizz',     'Buzz'
     ];
-    expect(fizzBuzz.fizzBuzz()).toEqual(answer);
-    expect(fizzBuzz.fizzBuzzSolution()).toEqual(answer);
+    expect(fizzBuzz()).toEqual(answer);
+    expect(fizzBuzzSolution()).toEqual(answer);
   });
 })
 

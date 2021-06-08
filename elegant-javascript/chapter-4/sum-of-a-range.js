@@ -2,7 +2,7 @@
 
 // Exercises: Chapter 4 of Elegant Javascript: Objects and Arrays
 
-// Exercise 1a: Write a range function that takes two arguments, start and end, and returns an array containing all the numbers from start up to (and including) end.
+// Exercise 1a: Write a range function that takes two arguments, start and end, and returns an array containing all the numbers from start through end.
 
 function range(start, end, step = start < end ? 1 : -1) {
   if (start === end) return [start];
