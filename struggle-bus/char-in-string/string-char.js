@@ -55,7 +55,7 @@ function countChar4(string, char) {
   if (hashtable.contains(char)) {
     let hash = hashtable.hash(char);
     let current = hashtable.map[hash].head;
-    if (!current.next) return {count: 1};
+    if (!current.next) return 1;
     else {
       let counter = 0;
       while (current.next) {
@@ -66,6 +66,5 @@ function countChar4(string, char) {
     };
   };
 }
-
 
 module.exports = { countChar1, countChar2, countChar3, countChar4 };
