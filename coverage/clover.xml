@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623209177679" clover="3.2.0">
-  <project timestamp="1623209177680" name="All files">
-    <metrics statements="187" coveredstatements="166" conditionals="133" coveredconditionals="117" methods="34" coveredmethods="31" elements="354" coveredelements="314" complexity="0" loc="187" ncloc="187" packages="7" files="12" classes="12"/>
+<coverage generated="1623298398737" clover="3.2.0">
+  <project timestamp="1623298398737" name="All files">
+    <metrics statements="195" coveredstatements="174" conditionals="135" coveredconditionals="119" methods="35" coveredmethods="32" elements="365" coveredelements="325" complexity="0" loc="195" ncloc="195" packages="8" files="13" classes="13"/>
     <package name="elegant-javascript.chapter-2">
       <metrics statements="39" coveredstatements="33" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="4"/>
       <file name="chessboard.js" path="/Users/Rhead/Documents/Projects/code-challenges/elegant-javascript/chapter-2/chessboard.js">
@@ -116,6 +116,20 @@
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="leetcode.easy.two-sum">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="two-sum.js" path="/Users/Rhead/Documents/Projects/code-challenges/leetcode/easy/two-sum/two-sum.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="39" count="7" type="stmt"/>
+        <line num="40" count="18" type="stmt"/>
+        <line num="42" count="18" type="stmt"/>
+        <line num="44" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="12" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
       </file>
     </package>
     <package name="leetcode.june-2021.day1">
