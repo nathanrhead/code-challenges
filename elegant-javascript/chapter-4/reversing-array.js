@@ -14,7 +14,6 @@ function reverseArray(array) {
 
 // This solution does what the native JS reverse method does: it modifies the given array in place by reversing its elements. * This is the author's method and it swaps the first and the last, then the second and the penultimate, etc.
 function reverseArrayInPlace(array) {
-
   for (let i = 0; i < Math.floor(array.length / 2); i++) {
     let temp = array[i];
     array[i] = array[array.length-1-i];
