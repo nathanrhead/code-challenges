@@ -27,4 +27,4 @@ Given an integer columnNumber, return its corresponding column title as it appea
 
 The [solution](https://leetcode.com/problems/excel-sheet-column-title/discuss/1291476/JavaScript-Solution-without-recursion) here was written by Dina Ayoub and posted in the discussion tab for this problem on Leetcode.
 
-## ![Whiteboard](../../assets/whiteboards/excel-column-whiteboard.png);
+## ![Whiteboard](../../assets/whiteboards/excel-column-whiteboard.png)
