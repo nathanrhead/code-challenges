@@ -39,3 +39,5 @@ Output: "acywaipkja"
 
 - Time: O(n) because of the for-loop: 84 ms, faster than 88.48% of JavaScript online submissions.
 - Memory: O(1): 40.3 MB, less than 29.03% of JavaScript online submissions.
+
+## ![Whiteboard](../../assets/whiteboards/remove-question-whiteboard.png)
