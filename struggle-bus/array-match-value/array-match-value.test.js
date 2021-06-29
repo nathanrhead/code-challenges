@@ -117,7 +117,6 @@ const databaseRecords = [
   ],
 ]
 
-
 describe ('a function that returns the values from an array that match those in another', () => {
 
   it ('returns everything from an array that matches a list of key words in a second array', () =>{

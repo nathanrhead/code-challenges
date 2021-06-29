@@ -1,11 +1,11 @@
 'use strict';
 
 /* Solution 1:
-This solution was posted on slack by John Pham, a member of Seattle JS Hackers. It's two problems lie in that it will return any entry that includes a keyword, even if that entry includes more than just that keyword; and that it returns all the instances of the keyword, assuming that's a problem.
+This solution was posted on slack by John Pham, a member of Seattle JS Hackers. While elegant, its drawbacks lie in that it will return any entry that includes a keyword, even if that entry includes more than just that keyword, and that it returns all the instances of the keyword, assuming those things pose a problem.
 
 - .flat() is a native JS method that transforms, or flattens, a nested array into a single array.
-- .some() returns true when its condition is met
-- .includes() returns true if the value passed as an argument is in the array
+- .some() returns true when its condition is met.
+- .includes() returns true if the value passed as an argument is in the array.
 */
 
 const getMatchingRecords1 = (records, keywords) => records.flat().filter(record => keywords.some(keyword => record.toLowerCase().includes(keyword.toLowerCase())));
@@ -16,7 +16,7 @@ const getMatchingRecords2 = (records, keywords) => {
   return flat.filter((val, idx) => flat.indexOf(val) === idx);
 };
 
-// Because .includes() and .indexOf() will return true when a string includes a keyword--e.g., 'housing' is included in 'housing for people with mental health issues'--the only thing I can think of to produce an array of exact matches in to either do a nested for-loop or a hashmap lookup. 
+// Solution 3: Because .includes() and .indexOf() will return true when a string includes a keyword--e.g., 'housing' is included in 'housing for people with mental health issues'--the only thing I can think of to produce an array of exact matches in to either do a nested for-loop or a hashmap lookup. 
 const getExactMatch1 = (keywords, filteredArray) => {
   let exactMatch = [];
   for (let i = 0; i < keywords.length; i++) {
