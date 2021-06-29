@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1624917161081" clover="3.2.0">
-  <project timestamp="1624917161081" name="All files">
-    <metrics statements="22" coveredstatements="22" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2" elements="36" coveredelements="36" complexity="0" loc="22" ncloc="22" packages="1" files="2" classes="2"/>
-    <file name="two-sum-solution1.js" path="/Users/Rhead/Documents/Projects/code-challenges/leetcode/easy/two-sum/two-sum-solution1.js">
-      <metrics statements="15" coveredstatements="15" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="7" type="stmt"/>
-      <line num="8" count="7" type="stmt"/>
-      <line num="9" count="22" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="6" type="stmt"/>
-      <line num="11" count="16" type="stmt"/>
-      <line num="14" count="7" type="stmt"/>
-      <line num="16" count="11" type="stmt"/>
-      <line num="17" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="18" count="7" type="cond" truecount="2" falsecount="0"/>
-      <line num="19" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="22" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="25" count="1" type="stmt"/>
-      <line num="28" count="1" type="stmt"/>
-    </file>
-    <file name="two-sum-solution2.js" path="/Users/Rhead/Documents/Projects/code-challenges/leetcode/easy/two-sum/two-sum-solution2.js">
-      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="6" count="7" type="stmt"/>
-      <line num="7" count="7" type="stmt"/>
-      <line num="8" count="18" type="stmt"/>
-      <line num="9" count="18" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="12" type="stmt"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
+<coverage generated="1624938382933" clover="3.2.0">
+  <project timestamp="1624938382934" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="26" coveredconditionals="24" methods="5" coveredmethods="5" elements="55" coveredelements="53" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1"/>
+    <file name="arrays-share-value.js" path="/Users/Rhead/Documents/Projects/code-challenges/zero-to-mastery/arrays-share-value/arrays-share-value.js">
+      <metrics statements="24" coveredstatements="24" conditionals="26" coveredconditionals="24" methods="5" coveredmethods="5"/>
+      <line num="5" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="7" count="9" type="stmt"/>
+      <line num="8" count="25" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="16" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="19" count="12" type="cond" truecount="1" falsecount="1"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="29" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="30" count="3" type="stmt"/>
+      <line num="31" count="3" type="stmt"/>
+      <line num="32" count="12" type="cond" truecount="1" falsecount="1"/>
+      <line num="33" count="12" type="stmt"/>
+      <line num="34" count="12" type="stmt"/>
+      <line num="37" count="3" type="stmt"/>
+      <line num="38" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="45" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="46" count="7" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
