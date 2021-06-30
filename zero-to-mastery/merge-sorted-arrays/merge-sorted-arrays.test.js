@@ -13,6 +13,7 @@ describe ('the challenge to merge two sorted arrays into one sorted array', () =
   const arraySeven = [0, 3, 4, 31, 42, 51, 85, 98];
   const arrayEight = [4, 6, 30];
   const arrayNine = [];
+  const arrayTen = {name: 'Nate'};
 
   it ('returns the expected sorted array', () => {
     expect(mergeSortedArrays(arrayOne, arrayTwo)).toEqual([ 0, 3, 4, 4, 6, 30, 31 ]);
@@ -21,8 +22,9 @@ describe ('the challenge to merge two sorted arrays into one sorted array', () =
     expect(mergeSortedArrays(arraySeven, arrayEight)).toEqual([ 0, 3, 4, 4, 6, 30, 31, 42, 51, 85, 98 ]);
   });
 
-  it ('returns an error when one or both of the two arrays is missing or empty', () => {
+  it ('returns an error when one or both of the two arrays is missing, empty, or not an array', () => {
     expect(mergeSortedArrays(arraySeven)).toEqual('There is nothing to merge.');
     expect(mergeSortedArrays(arraySeven, arrayNine)).toEqual('There is nothing to merge.');
+    expect(mergeSortedArrays(arrayNine, arrayTen)).toEqual('There is nothing to merge.');
   });
 })

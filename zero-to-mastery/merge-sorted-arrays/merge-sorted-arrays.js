@@ -1,7 +1,7 @@
 'use strict';
 
 function mergeSortedArrays(arrOne, arrTwo) {
-  if (!arrOne || !arrTwo || arrOne.length < 1 || arrTwo.length < 1) return 'There is nothing to merge.';
+  if (!arrOne || !arrTwo || arrOne.length < 1 || arrTwo.length < 1 || !Array.isArray(arrOne) || !Array.isArray(arrTwo)) return 'There is nothing to merge.';
 
   let result = [];
   let i = 0, j = 0;
