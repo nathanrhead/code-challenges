@@ -22,9 +22,13 @@ describe ('the challenge to merge two sorted arrays into one sorted array', () =
     expect(mergeSortedArrays(arraySeven, arrayEight)).toEqual([ 0, 3, 4, 4, 6, 30, 31, 42, 51, 85, 98 ]);
   });
 
+  it ('returns the first array when the second is empty, and vice versa', () => {
+    expect(mergeSortedArrays(arraySeven, arrayNine)).toEqual(arraySeven);
+    expect(mergeSortedArrays(arrayNine, arraySeven)).toEqual(arraySeven);
+  })
+
   it ('returns an error when one or both of the two arrays is missing, empty, or not an array', () => {
     expect(mergeSortedArrays(arraySeven)).toEqual('There is nothing to merge.');
-    expect(mergeSortedArrays(arraySeven, arrayNine)).toEqual('There is nothing to merge.');
     expect(mergeSortedArrays(arrayNine, arrayTen)).toEqual('There is nothing to merge.');
   });
 })

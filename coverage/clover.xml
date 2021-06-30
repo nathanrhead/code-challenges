@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625095349035" clover="3.2.0">
-  <project timestamp="1625095349035" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1" elements="24" coveredelements="24" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+<coverage generated="1625095619624" clover="3.2.0">
+  <project timestamp="1625095619624" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1" elements="29" coveredelements="29" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
     <file name="merge-sorted-arrays.js" path="/Users/Rhead/Documents/Projects/code-challenges/zero-to-mastery/merge-sorted-arrays/merge-sorted-arrays.js">
-      <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
-      <line num="4" count="7" type="cond" truecount="8" falsecount="0"/>
-      <line num="6" count="4" type="stmt"/>
-      <line num="7" count="4" type="stmt"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="9" count="36" type="cond" truecount="4" falsecount="0"/>
-      <line num="10" count="18" type="stmt"/>
-      <line num="11" count="18" type="stmt"/>
+      <metrics statements="14" coveredstatements="14" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1"/>
+      <line num="4" count="8" type="cond" truecount="6" falsecount="0"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="11" count="4" type="stmt"/>
+      <line num="12" count="36" type="cond" truecount="4" falsecount="0"/>
       <line num="13" count="18" type="stmt"/>
       <line num="14" count="18" type="stmt"/>
-      <line num="17" count="4" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
+      <line num="16" count="18" type="stmt"/>
+      <line num="17" count="18" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
