@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for leetcode/easy/replace-question-marks/replace-question-marks.js</title>
+    <title>Code coverage report for leetcode/easy/two-sum/two-sum-solution2.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">leetcode/easy/replace-question-marks</a> replace-question-marks.js</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">leetcode/easy/two-sum</a> two-sum-solution2.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>15/16</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
@@ -72,42 +72,36 @@
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
 <a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L16'></a><a href='#L16'>16</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">49x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">21x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-function modifyString(s) {
-  if (!s.includes('?')) return s;
-  let answer = '';
-  for (let i = 0; i &lt; s.length; i++) {
-    if (s[i] !== '?') answer += s[i];
-    else {
-      if (answer[i-1] !== 'a' &amp;&amp; s[i+1] !== 'a') answer += 'a';
-      else if (answer[i-1] !== 'b' &amp;&amp; s[i+1] !== 'b') answer += 'b';
-      else <span class="missing-if-branch" title="else path not taken" >E</span>if (answer[i-1] !== 'c' &amp;&amp; s[i+1] !== 'c') answer += 'c';
-    }
-  };
-  return answer;
+// Solution 2: Leetcodes one-pass hash solution, which is so much cooler than mine. Big 0 for time = O(n); space = O(n).
+&nbsp;
+function twoSum(nums, target) {
+  let map = new Map();
+  for (let i = 0; i &lt; nums.length; i++) {
+      let diff = target - nums[i];
+      if (map.has(diff)) return Array(map.get(diff), i);
+      map.set(nums[i], i);
+  }
+  return ('No two-sum solution.');
 }
 &nbsp;
-module.exports = modifyString;
+module.exports = twoSum;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

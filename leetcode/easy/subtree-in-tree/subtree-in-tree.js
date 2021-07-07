@@ -84,4 +84,29 @@ function isSub(n, subtree) {
 }
 
 //---------------------- Solution 3: Recursion ---------------------
-module.exports = { findSubTree1, findSubTree2 };
+function findSubTree3(tree, subtree) {
+  // Error checking for empty trees.
+  if (!tree || !subtree) return false;
+
+  // Checks to see whether (a) the root nodes are of equal value and, if so, whether their descendants match.
+  else if (isSameTree(tree, subtree)) {
+    return true;
+  }
+  
+  // If the helper function returns false, the following calls the main function again with the next node in the tree, whether left or right.
+  else return findSubTree3(tree.left, subtree) || findSubTree3(tree.right, subtree);
+  
+  // This helper function checks to see if the two trees match.
+  function isSameTree(tree, subtree){
+      if (!tree && !subtree) {
+        return true;
+
+      } else if (!tree || !subtree) return false;
+        else if (tree.value === subtree.value) {
+          return isSameTree(tree.left, subtree.left) && isSameTree(tree.right, subtree.right);
+      }
+      else return false;
+  }
+}
+
+module.exports = { findSubTree1, findSubTree2, findSubTree3 };

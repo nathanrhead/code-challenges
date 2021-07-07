@@ -33,9 +33,14 @@ This is my soluiton and, while it's inelegant, it works, and I'm proud of that. 
 
 This solution, which I've edited here for my purposes--including breaking it into three separate functions--was posted on the Leetcode discussion board for this challenge by "stevenwonlee". I reverse-engineered the whiteboard, so to speak, from the code while working to understand the approach thoroughly.
 
-- Space: O(a + b + c), because of the three queues created.
-- Time: O(a + b), because of the two, consecutive while-loops.
+- Space: O(a + b + c), because of the three queues created; less than only 5.63% of JavaScript online submissions.
+- Time: O(a + b), because of the two, consecutive while-loops; faster than only 5.42% of JavaScript online submissions on Leetcode.
 
 ![Whiteboard for Solution 2](../../assets/whiteboards/subtree-in-tree-whiteboard.png)
 
-### Solution 3 | [Recursion]()
+### Solution 3 | [Recursion](https://leetcode.com/problems/subtree-of-another-tree/discuss/1138076/Recursive-Javascript-solution)
+
+This solution, which I've edited here for my purposes and to fit my setup--also, to fix errors--was posted on the Leetcode discussion board for this challenge by "karn12".
+
+- Space: O(a), because of nothing new is being created, although recursion does stack the stack, which takes memory, and there is a lot of recursion taking place here; less than only 10.62% of JavaScript online submissions on Leetcode.
+- Time: O(a * b), because each recursive call takes O(m) space and each tree has a depth of n; faster than only 48.10% of JavaScript online submissions on Leetcode.
