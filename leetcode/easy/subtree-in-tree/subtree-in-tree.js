@@ -2,8 +2,7 @@
 
 //------------------- Solution 1: BFS + DFS preorder + looping over an array --------------------
 function findSubTree1(tree, subtree) {
-  if (!tree || !subtree || !tree.root || !subtree.root) return false;
-
+  if (!tree || !subtree) return false;
   const preOrder = tree => {
     if (!tree) return [];
     const results = [];
@@ -16,16 +15,16 @@ function findSubTree1(tree, subtree) {
     return results;
   }
 
-  const subtreePreOrder = subtree.preOrder();
+  const subtreePreOrder = preOrder(subtree);
 
   const queue = [];
   let queueIndex = 0;
   let resultsIndex = 0;
-  queue[queueIndex] = tree.root;
+  queue[queueIndex] = tree;
 
-  while (queue.length) {
+  while (queue[resultsIndex]) {
     const current = queue[resultsIndex];
-    if (current.value !== subtree.root.value) {
+    if (current.value !== subtree.value) {
       if (current.left) { queue[++queueIndex] = current.left; }
       if (current.right) { queue[++queueIndex] = current.right; }
     } else {
@@ -45,16 +44,16 @@ function findSubTree1(tree, subtree) {
 
 //------------------ Solution 2: Breadth-first only --------------------
 function findSubTree2(tree, subtree) {
-  if (!tree || !subtree || !tree.root || !subtree.root) return false;
+  if (!tree || !subtree) return false;
   return BFS(tree, subtree);
 }
 
 // This helper uses BFS to traverse through the main tree and compares the value of the nodes of the tree with the value of the subtree's root, calling isSub() if it finds a match and returning false otherwise.
 function BFS(root, subroot) {
-  const queue = [root.root];
+  const queue = [root];
   while (queue.length) {
     const current = queue.shift();
-    if (current.value === subroot.root.value)
+    if (current.value === subroot.value)
       if (isSub(current, subroot))
         return true;
     if (current.left) queue.push(current.left);
@@ -66,7 +65,7 @@ function BFS(root, subroot) {
 // This helper uses BFS to compare the descendents of the matching nodes, returning true if they all match and false otherwise.
 function isSub(n, subtree) {
   const mainQueue = [n];
-  const subQueue = [subtree.root];
+  const subQueue = [subtree];
 
   while (mainQueue.length || subQueue.length) {
     const mainNode = mainQueue.shift();

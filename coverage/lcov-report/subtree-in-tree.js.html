@@ -30,9 +30,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.94% </span>
+                <span class="strong">93.55% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>62/66</span>
+                <span class='fraction'>58/62</span>
             </div>
         
             
@@ -168,23 +168,21 @@
 <a name='L109'></a><a href='#L109'>109</a>
 <a name='L110'></a><a href='#L110'>110</a>
 <a name='L111'></a><a href='#L111'>111</a>
-<a name='L112'></a><a href='#L112'>112</a>
-<a name='L113'></a><a href='#L113'>113</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L112'></a><a href='#L112'>112</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
@@ -257,26 +255,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">49x</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">40x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">32x</span>
-<span class="cline-any cline-yes">30x</span>
-<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -285,8 +283,7 @@
 &nbsp;
 //------------------- Solution 1: BFS + DFS preorder + looping over an array --------------------
 function findSubTree1(tree, subtree) {
-  if (!tree || !subtree || !tree.root || !subtree.root) return false;
-&nbsp;
+  if (!tree || !subtree) return false;
   const preOrder = tree =&gt; {
     <span class="missing-if-branch" title="if path not taken" >I</span>if (!tree) <span class="cstat-no" title="statement not covered" >return [];</span>
     const results = [];
@@ -299,16 +296,16 @@ function findSubTree1(tree, subtree) {
     return results;
   }
 &nbsp;
-  const subtreePreOrder = subtree.preOrder();
+  const subtreePreOrder = preOrder(subtree);
 &nbsp;
   const queue = [];
   let queueIndex = 0;
   let resultsIndex = 0;
-  queue[queueIndex] = tree.root;
+  queue[queueIndex] = tree;
 &nbsp;
-  while (queue.length) {
+  while (queue[resultsIndex]) {
     const current = queue[resultsIndex];
-    if (current.value !== subtree.root.value) {
+    if (current.value !== subtree.value) {
       <span class="missing-if-branch" title="else path not taken" >E</span>if (current.left) { queue[++queueIndex] = current.left; }
       <span class="missing-if-branch" title="else path not taken" >E</span>if (current.right) { queue[++queueIndex] = current.right; }
     } else {
@@ -328,16 +325,16 @@ function findSubTree1(tree, subtree) {
 &nbsp;
 //------------------ Solution 2: Breadth-first only --------------------
 function findSubTree2(tree, subtree) {
-  if (!tree || !subtree || !tree.root || !subtree.root) return false;
+  if (!tree || !subtree) return false;
   return BFS(tree, subtree);
 }
 &nbsp;
 // This helper uses BFS to traverse through the main tree and compares the value of the nodes of the tree with the value of the subtree's root, calling isSub() if it finds a match and returning false otherwise.
 function BFS(root, subroot) {
-  const queue = [root.root];
+  const queue = [root];
   while (queue.length) {
     const current = queue.shift();
-    if (current.value === subroot.root.value)
+    if (current.value === subroot.value)
       if (isSub(current, subroot))
         return true;
     if (current.left) queue.push(current.left);
@@ -349,7 +346,7 @@ function BFS(root, subroot) {
 // This helper uses BFS to compare the descendents of the matching nodes, returning true if they all match and false otherwise.
 function isSub(n, subtree) {
   const mainQueue = [n];
-  const subQueue = [subtree.root];
+  const subQueue = [subtree];
 &nbsp;
   while (mainQueue.length || subQueue.length) {
     const mainNode = mainQueue.shift();
@@ -400,7 +397,7 @@ module.exports = { findSubTree1, findSubTree2, findSubTree3 };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Jul 06 2021 17:42:39 GMT-0700 (Pacific Daylight Time)
+                at Wed Jul 07 2021 19:07:44 GMT-0700 (Pacific Daylight Time)
             </div>
         </div>
         <script src="prettify.js"></script>
