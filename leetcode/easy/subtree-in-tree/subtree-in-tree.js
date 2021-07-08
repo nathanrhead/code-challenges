@@ -7,7 +7,7 @@ function findSubTree1(tree, subtree) {
   const preOrder = tree => {
     if (!tree) return [];
     const results = [];
-    let _walk = node => {
+    const _walk = node => {
       results.push(node.value);
       if (node.left) _walk(node.left);
       if (node.right) _walk(node.right);
