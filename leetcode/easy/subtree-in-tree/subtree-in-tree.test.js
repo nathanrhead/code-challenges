@@ -46,11 +46,8 @@ describe('the function to determine whether a subtree exists within a binary tre
   tree3.addNode(4);
   const subtree3 = new BinaryTree();
   subtree3.addNode(6);
-  subtree3.addNode(null);
   subtree3.addNode(8);
   subtree3.addNode(null);
-  subtree3.addNode(null);
-  subtree3.addNode(9);
   subtree3.addNode(4);
 
   const root1 = tree1.root;
@@ -77,8 +74,8 @@ describe('the function to determine whether a subtree exists within a binary tre
   // None of the solutions pass this test: they can't handle it when the first node the matches isn't the promised node.
   it ('returns true when a subtree does exist within a tree and works when the match doesn\'t belong to the first node that matches the subtree\'s root', () => {
     // expect(findSubTree1(root3, subroot3)).toBe(true);
-    // expect(findSubTree2(root3, subroot3)).toBe(true);
-    // expect(findSubTree3(root3, subroot3)).toBe(true);
+    expect(findSubTree2(root3, subroot3)).toBe(true);
+    expect(findSubTree3(root3, subroot3)).toBe(true);
   });
 
 

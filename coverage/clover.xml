@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625711081766" clover="3.2.0">
-  <project timestamp="1625711081767" name="All files">
+<coverage generated="1625716671838" clover="3.2.0">
+  <project timestamp="1625716671838" name="All files">
     <metrics statements="145" coveredstatements="81" conditionals="113" coveredconditionals="66" methods="22" coveredmethods="11" elements="280" coveredelements="158" complexity="0" loc="145" ncloc="145" packages="1" files="2" classes="2"/>
     <file name="binary-tree-class.js" path="/Users/Rhead/Documents/Projects/code-challenges/leetcode/easy/subtree-in-tree/binary-tree-class.js">
       <metrics statements="83" coveredstatements="20" conditionals="51" coveredconditionals="8" methods="14" coveredmethods="3"/>
-      <line num="6" count="40" type="stmt"/>
-      <line num="7" count="40" type="stmt"/>
-      <line num="8" count="40" type="stmt"/>
+      <line num="6" count="37" type="stmt"/>
+      <line num="7" count="37" type="stmt"/>
+      <line num="8" count="37" type="stmt"/>
       <line num="15" count="8" type="stmt"/>
-      <line num="20" count="40" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="37" type="cond" truecount="2" falsecount="0"/>
       <line num="21" count="6" type="stmt"/>
       <line num="22" count="6" type="stmt"/>
-      <line num="26" count="34" type="stmt"/>
-      <line num="27" count="34" type="stmt"/>
-      <line num="29" count="34" type="stmt"/>
-      <line num="30" count="83" type="stmt"/>
-      <line num="32" count="83" type="cond" truecount="2" falsecount="0"/>
-      <line num="33" count="18" type="stmt"/>
-      <line num="34" count="18" type="stmt"/>
-      <line num="36" count="65" type="stmt"/>
-      <line num="39" count="65" type="cond" truecount="2" falsecount="0"/>
-      <line num="40" count="16" type="stmt"/>
-      <line num="41" count="16" type="stmt"/>
-      <line num="43" count="49" type="stmt"/>
+      <line num="26" count="31" type="stmt"/>
+      <line num="27" count="31" type="stmt"/>
+      <line num="29" count="31" type="stmt"/>
+      <line num="30" count="75" type="stmt"/>
+      <line num="32" count="75" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="17" type="stmt"/>
+      <line num="34" count="17" type="stmt"/>
+      <line num="36" count="58" type="stmt"/>
+      <line num="39" count="58" type="cond" truecount="2" falsecount="0"/>
+      <line num="40" count="14" type="stmt"/>
+      <line num="41" count="14" type="stmt"/>
+      <line num="43" count="44" type="stmt"/>
       <line num="50" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="51" count="0" type="stmt"/>
       <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -90,34 +90,34 @@
     </file>
     <file name="subtree-in-tree.js" path="/Users/Rhead/Documents/Projects/code-challenges/leetcode/easy/subtree-in-tree/subtree-in-tree.js">
       <metrics statements="62" coveredstatements="61" conditionals="62" coveredconditionals="58" methods="8" coveredmethods="8"/>
-      <line num="5" count="5" type="cond" truecount="4" falsecount="0"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="8" count="4" type="cond" truecount="1" falsecount="1"/>
-      <line num="9" count="4" type="stmt"/>
-      <line num="10" count="4" type="stmt"/>
-      <line num="11" count="15" type="stmt"/>
-      <line num="12" count="15" type="cond" truecount="2" falsecount="0"/>
-      <line num="13" count="15" type="cond" truecount="2" falsecount="0"/>
-      <line num="15" count="4" type="stmt"/>
-      <line num="16" count="4" type="stmt"/>
-      <line num="19" count="2" type="stmt"/>
-      <line num="21" count="2" type="stmt"/>
-      <line num="22" count="2" type="stmt"/>
-      <line num="23" count="2" type="stmt"/>
-      <line num="24" count="2" type="stmt"/>
-      <line num="26" count="2" type="stmt"/>
-      <line num="27" count="4" type="stmt"/>
-      <line num="28" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="29" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="30" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="32" count="2" type="stmt"/>
-      <line num="33" count="2" type="stmt"/>
-      <line num="34" count="2" type="stmt"/>
-      <line num="35" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="36" count="4" type="stmt"/>
+      <line num="5" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="8" count="6" type="cond" truecount="1" falsecount="1"/>
+      <line num="9" count="6" type="stmt"/>
+      <line num="10" count="6" type="stmt"/>
+      <line num="11" count="26" type="stmt"/>
+      <line num="12" count="26" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="26" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="6" type="stmt"/>
+      <line num="16" count="6" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="24" count="3" type="stmt"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="27" count="6" type="stmt"/>
+      <line num="28" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="29" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="30" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="32" count="3" type="stmt"/>
+      <line num="33" count="3" type="stmt"/>
+      <line num="34" count="3" type="stmt"/>
+      <line num="35" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="36" count="5" type="stmt"/>
       <line num="38" count="1" type="stmt"/>
-      <line num="40" count="2" type="stmt"/>
-      <line num="41" count="2" type="stmt"/>
+      <line num="40" count="3" type="stmt"/>
+      <line num="41" count="3" type="stmt"/>
       <line num="43" count="0" type="stmt"/>
       <line num="48" count="5" type="cond" truecount="4" falsecount="0"/>
       <line num="49" count="2" type="stmt"/>

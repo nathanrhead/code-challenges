@@ -43,4 +43,4 @@ This solution, which I've edited here for my purposes--including breaking it int
 This solution, which I've edited here for my purposes and to fit my setup--also, to fix errors--was posted on the Leetcode discussion board for this challenge by "karn12".
 
 - Space: O(a), because of nothing new is being created, although recursion does stack the stack, which takes memory, and there is a lot of recursion taking place here; less than only 10.62% of JavaScript online submissions on Leetcode.
-- Time: O(a * b), because each recursive call takes O(m) space and each tree has a depth of n; faster than only 48.10% of JavaScript online submissions on Leetcode.
+- Time: O(a * b), because each recursive call takes O(m) space and each tree has a depth of n; faster than only 99.14% of JavaScript online submissions on Leetcode.
