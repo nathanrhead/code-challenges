@@ -3,6 +3,7 @@
 //------------------- Solution 1: BFS + DFS preorder + looping over an array --------------------
 function findSubTree1(tree, subtree) {
   if (!tree || !subtree) return false;
+
   const preOrder = tree => {
     if (!tree) return [];
     const results = [];
@@ -25,8 +26,8 @@ function findSubTree1(tree, subtree) {
   while (queue[resultsIndex]) {
     const current = queue[resultsIndex];
     if (current.value !== subtree.value) {
-      if (current.left) { queue[++queueIndex] = current.left; }
-      if (current.right) { queue[++queueIndex] = current.right; }
+      if (current.left) queue[++queueIndex] = current.left; 
+      if (current.right) queue[++queueIndex] = current.right;
     } else {
       const match = preOrder(current);
       let i = match.length;
@@ -92,7 +93,7 @@ function findSubTree3(tree, subtree) {
     return true;
   }
   
-  // If the helper function returns false, the following calls the main function again with the next node in the tree, whether left or right.
+  // If the helper function returns false, the following line calls the main function again with the next node in the tree, whether left or right.
   else return findSubTree3(tree.left, subtree) || findSubTree3(tree.right, subtree);
   
   // This helper function checks to see if the two trees match.

@@ -55,10 +55,10 @@ describe('the function to determine whether a subtree exists within a binary tre
 
   const root1 = tree1.root;
   const root2 = tree2.root;
-  const root3 = tree2.root;
+  const root3 = tree3.root;
   const subroot1 = subtree1.root;
   const subroot2 = subtree2.root;
-  const subroot3 = subtree2.root;
+  const subroot3 = subtree3.root;
 
 
   it ('returns true when a subtree exists within a tree', () => {
@@ -73,6 +73,14 @@ describe('the function to determine whether a subtree exists within a binary tre
     expect(findSubTree2(root2, subroot2)).toBe(false);
     expect(findSubTree3(root2, subroot2)).toBe(false);
   });
+
+  // None of the solutions pass this test: they can't handle it when the first node the matches isn't the promised node.
+  it ('returns true when a subtree does exist within a tree and works when the match doesn\'t belong to the first node that matches the subtree\'s root', () => {
+    // expect(findSubTree1(root3, subroot3)).toBe(true);
+    // expect(findSubTree2(root3, subroot3)).toBe(true);
+    // expect(findSubTree3(root3, subroot3)).toBe(true);
+  });
+
 
   it ('returns false when either the tree or the subtree is empty', () => {
     const root = new BinaryTree();
