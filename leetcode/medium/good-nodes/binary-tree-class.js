@@ -45,7 +45,7 @@ class BinaryTree {
     }
   }
 
-    // This makes a Binary Search Tree (BST) and may only accept integers.
+    // Define a method named add that accepts a value and adds a new node with that value in the correct location in the binary search tree: this one will make a BST and may only accept integers.
   add(value) {
     if (typeof value !== 'number') {
       return null;
