@@ -15,14 +15,6 @@ function Square(props) {
 }
 
 // React component 2 of 3
-/*
-this.state.squares when filled will look something like this:
-[
-  'O', null, 'X',
-  'X', 'X', 'O',
-  'O', null, null,
-]
-*/
 class Board extends React.Component {
   renderSquare(i) {
     return (
@@ -63,6 +55,10 @@ class Game extends React.Component {
     this.state = {
       history: [{
         squares: Array(9).fill(null),
+        squareLocation: {
+          row: 0,
+          col: 0,
+        } 
       }],
       stepNumber: 0,
       xIsNext: true,
@@ -70,16 +66,39 @@ class Game extends React.Component {
   }
 
   handleClick(i) {
+    // This is the history of the game from the empty board to the latest step number, accounting for the possibility that a player has clicked on one of the buttons that wind the game back to a previous step. 
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
+
+    // The latest iteration of history, reflecting the move just prior to the latest move/click.
     const current = history[history.length - 1];
+
+    // A copy of the lastest squares array.
     const squares = current.squares.slice();
+
+    let row;
+    let col;
+
+    if (i <= 2) row = 1; 
+    else if(i > 2 && i <= 5) row = 2;
+    else row = 3;
+
+    if (i === 0 || i === 3 || i === 6) col = 1;
+    else if (i === 1 || i === 4 || i === 7) col = 2;
+    else col = 3;
+    
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
+    
     squares[i] = this.state.xIsNext ? 'X' : 'O';
     this.setState({
+      // history: [...history, squares, colRow]: doesn't work, but Ima figure out the spread operator.
       history: history.concat([{
-        squares
+        squares,
+        squareLocation: {
+          row: row,
+          col: col
+        }
       }]),
       stepNumber: history.length,
       xIsNext: !this.state.xIsNext,
@@ -95,10 +114,15 @@ class Game extends React.Component {
 
   render() {
     const history = this.state.history;
+    console.log({history});
+
     const current = history[this.state.stepNumber];
+    console.log({current});
+
+
     const winner = calculateWinner(current);
     const moves = history.map((step, move) => {
-      const desc = move ? 'Go to move #' + move : 'Go to game start';
+      const desc = move ? `Go to move # ${move}: row ${step.squareLocation.row}, col ${step.squareLocation.col}` : 'Go to game start';
       return (
         <li key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>

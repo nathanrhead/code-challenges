@@ -12,7 +12,7 @@
 ## Stretch Goals (in order of difficulty)
 
 - [ ] Refactor the code such that each component lives in its own file in a directory called "components"; that index.js holds only the ReactDOM.render function with reference to app.js, as well as root in index.html; and app.js acts as the component hub and holder of state.
-- [ ] Display the location for each move in the format (col, row) in the move history list.
+- [x] Display the location for each move in the format (col, row) in the move history list.
 - [ ] Bold the currently selected item in the move list.
 - [ ] Rewrite Board to use two loops to make the squares instead of hardcoding them.
 - [ ] Add a toggle button that lets you sort the moves in either ascending or descending order.
@@ -21,6 +21,6 @@
 
 ## Notes
 
-A clear, step-by-step, hands-on tutorial that takes you from setup to full functionality, whether in the browser or in your local environment. 
+A clear, step-by-step, hands-on tutorial that takes you from setup to full functionality, whether in the browser or in your local environment.
 
 From React: Throughout this tutorial, we touched on React concepts including elements, components, props, and state. For a more detailed explanation of each of these topics, check out the [rest of the documentation](https://reactjs.org/docs/hello-world.html). To learn more about defining components, check out the [React.Component API reference](https://reactjs.org/docs/react-component.html).
