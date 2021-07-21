@@ -13,7 +13,7 @@
 
 - [ ] Refactor the code such that each component lives in its own file in a directory called "components"; that index.js holds only the ReactDOM.render function with reference to app.js, as well as root in index.html; and app.js acts as the component hub and holder of state.
 - [x] Display the location for each move in the format (col, row) in the move history list.
-- [ ] Bold the currently selected item in the move list.
+- [x] Bold the currently selected item in the move list.
 - [ ] Rewrite Board to use two loops to make the squares instead of hardcoding them.
 - [ ] Add a toggle button that lets you sort the moves in either ascending or descending order.
 - [ ] When someone wins, highlight the three squares that caused the win.
