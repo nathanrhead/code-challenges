@@ -54,16 +54,42 @@ ul {
 
 .button {
   outline: none;
-  border: none;
+  border: 2px solid black;
+  border-radius: 3px;
   background: transparent;
   padding: .5vh .5vw .5vh 0.5vw;
   margin: .2vh;
-  width: 15vw;
+  width: 20vw;
   text-align: left;
 }
 
 .button:focus {
   background: black;
   color: white;
+  border: 2px solid white;
   border-radius: 3px;
+}
+
+.list {
+  list-style-type: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 1vh 0;
+  width: 20vw;
+}
+
+.history {
+  /* height: 15vh; */
+  background: transparent;
+  border: none;
+  width: 21vw;
+  text-align: left;
+  border-radius: 3px;
+}
+
+.history:focus {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 7px;
 }

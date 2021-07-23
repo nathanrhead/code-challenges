@@ -8,6 +8,7 @@ function Square(props) {
   return (
     <button
       className="square"
+      tabIndex="0"
       onClick={props.onClick}
     >
       {props.value}
@@ -36,7 +37,7 @@ class Board extends React.Component {
     }
 
     return (
-        gameBoard.map((row, idx) => (
+      gameBoard.map((row, idx) => (
         <div className="board-row" key={row[idx]}>
           <ul>{this.renderSquare(row[0])}</ul>
           <ul>{this.renderSquare(row[1])}</ul>
@@ -61,18 +62,14 @@ class Game extends React.Component {
       }],
       stepNumber: 0,
       xIsNext: true,
+      movesAscending: true,
     };
   }
 
   handleClick(i) {
-    // This is the history of the game from the empty board to the latest step number, accounting for the possibility that a player has clicked on one of the buttons that wind the game back to a previous step. 
-    const history = this.state.history.slice(0, this.state.stepNumber + 1);
-
-    // The latest iteration of history, reflecting the move just prior to the latest move/click.
-    const current = history[history.length - 1];
-
-    // A copy of the lastest squares array.
-    const squares = current.squares.slice();
+    const history = this.state.history.slice(0, this.state.stepNumber + 1); // This is the history of the game from the empty board to the latest step number, accounting for the possibility that a player has clicked on one of the buttons that wind the game back to a previous step. 
+    const current = history[history.length - 1]; // The latest iteration of history, reflecting the move just prior to the latest move/click.
+    const squares = current.squares.slice(); // A copy of the lastest squares array.
 
     let row;
     let col;
@@ -90,7 +87,6 @@ class Game extends React.Component {
 
     squares[i] = this.state.xIsNext ? 'X' : 'O';
     this.setState({
-      // history: [...history, squares, colRow]: doesn't work, but Ima figure out the spread operator.
       history: history.concat([{
         squares,
         squareLocation: {
@@ -110,26 +106,42 @@ class Game extends React.Component {
     });
   }
 
+  toggleOrder() {
+    this.state.movesAscending === true ? this.setState({ movesAscending: !true }) : this.setState({ movesAscending: true });
+    console.log(this.state.movesAscending);
+  }
+
   render() {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const squares = current.squares;
     const winner = calculateWinner(squares);
+    const order = this.state.movesAscending;
+
     const moves = history.map((step, move) => {
-      const desc = move ? `Move # ${move}: row ${step.squareLocation.row}, col ${step.squareLocation.col}` : 'Game start';
+      let desc;
+      const squareDetails = history[history.length - move];
+
+      if (order) {
+        desc = move ? `Move # ${move}: row ${step.squareLocation.row}, col ${step.squareLocation.col}` : 'Game start';
+      } else {
+        desc = move ? `Move # ${history.length - move}: row ${squareDetails.squareLocation.row}, col ${squareDetails.squareLocation.col}` : 'Game start';
+      }
+
       return (
         <li key={move} className="list">
-          <button className="button" onClick={() => this.jumpTo(move)}>{desc}</button>
+          <button className="history" onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
       );
     });
 
     let status;
-    if (winner) {
-      status = 'Winner: ' + winner;
-    } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
-    }
+    if (winner) status = 'Winner: ' + winner;
+    else status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+
+    let toggle;
+    if (order) toggle = 'History of Moves: Ascending';
+    else toggle = 'History of Moves: Descending';
 
     return (
       <div className="game">
@@ -141,7 +153,13 @@ class Game extends React.Component {
         </div>
         <div className="game-info">
           <div>{status}</div>
-          <ol>{moves}</ol>
+          <button
+            className="button"
+            onClick={() => this.toggleOrder()}
+          >
+            {toggle}
+          </button>
+          <div className="history">{moves}</div>
         </div>
       </div>
     );
