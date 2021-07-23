@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './reset.css';
 import './index.css';
 
 // React component 1 of 3: a "controlled component" (by the Board component)
 function Square(props) {
   return (
-    <button 
-      className="square" 
+    <button
+      className="square"
       onClick={props.onClick}
     >
-      {props.value} 
+      {props.value}
     </button>
   );
 }
@@ -18,7 +19,7 @@ function Square(props) {
 class Board extends React.Component {
   renderSquare(i) {
     return (
-      <Square 
+      <Square
         value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)}
       />
@@ -26,24 +27,22 @@ class Board extends React.Component {
   }
 
   render() {
+    const gameBoard = [[], [], []];
+    let value = 0;
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < 3; j++) {
+        gameBoard[i][j] = value++;
+      }
+    }
+
     return (
-      <div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+        gameBoard.map((row, idx) => (
+        <div className="board-row" key={row[idx]}>
+          <ul>{this.renderSquare(row[0])}</ul>
+          <ul>{this.renderSquare(row[1])}</ul>
+          <ul>{this.renderSquare(row[2])}</ul>
         </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
-      </div>
+      ))
     );
   }
 }
@@ -58,7 +57,7 @@ class Game extends React.Component {
         squareLocation: {
           row: 0,
           col: 0,
-        } 
+        }
       }],
       stepNumber: 0,
       xIsNext: true,
@@ -78,17 +77,17 @@ class Game extends React.Component {
     let row;
     let col;
 
-    if (i <= 2) row = 1; 
-    else if(i > 2 && i <= 5) row = 2;
+    if (i <= 2) row = 1;
+    else if (i > 2 && i <= 5) row = 2;
     else row = 3;
 
     if (i === 0 || i === 3 || i === 6) col = 1;
     else if (i === 1 || i === 4 || i === 7) col = 2;
     else col = 3;
-    
-    if (calculateWinner(squares) || squares[i]) 
+
+    if (calculateWinner(squares) || squares[i])
       return;
-    
+
     squares[i] = this.state.xIsNext ? 'X' : 'O';
     this.setState({
       // history: [...history, squares, colRow]: doesn't work, but Ima figure out the spread operator.
@@ -135,7 +134,7 @@ class Game extends React.Component {
     return (
       <div className="game">
         <div className="game-board">
-          <Board 
+          <Board
             squares={current.squares}
             onClick={(i) => this.handleClick(i)}
           />
