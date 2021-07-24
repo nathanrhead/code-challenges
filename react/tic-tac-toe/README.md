@@ -17,7 +17,7 @@
 - [x] Rewrite the Board component to use two loops to make the squares instead of hardcoding them.
 - [x] Add a toggle button that lets you sort the moves in either ascending or descending order.
 - [x] When someone wins, highlight the three squares that caused the win.
-- [ ] When no one wins, display a message about the result being a draw.
+- [x] When no one wins, display a message about the result being a draw and highlight it.
 
 ## Notes
 

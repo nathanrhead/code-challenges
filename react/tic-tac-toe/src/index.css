@@ -58,7 +58,7 @@ ul {
   border-radius: 3px;
   background: transparent;
   padding: .5vh .5vw .5vh 0.5vw;
-  margin: .2vh;
+  margin: .2vh 0;
   width: 20vw;
   text-align: left;
 }
@@ -74,7 +74,7 @@ ul {
   list-style-type: none;
   border: 2px solid black;
   border-radius: 3px;
-  margin: 1vh 0;
+  margin: .5vh 0;
   width: 20vw;
 }
 
@@ -98,4 +98,14 @@ ul {
   background-color: orange;
   color: white;
   border: 2px solid white;
+}
+
+.scratch {
+  background-color: orange;
+  color: white;
+  width: 20vw;
+  border-radius: 3px;
+  padding: 3vh 3vw;
+  font-size: 3vw;
+  margin: .5vh 0;
 }

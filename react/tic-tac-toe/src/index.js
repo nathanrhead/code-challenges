@@ -6,7 +6,7 @@ import './index.css';
 // React component 1 of 3: a "controlled component" (by the Board component)
 function Square(props) {
   let winIndex = null;
-  if (props.winner){
+  if (props.winner) {
     const winner = props.winner[1];
     for (let i = 0; i < winner.length; i++) {
       console.log('index:', props.index)
@@ -149,8 +149,10 @@ class Game extends React.Component {
       );
     });
 
+    console.log(this.state.stepNumber);
     let status;
     if (winner) status = 'Winner: ' + winner[0];
+    else if (!winner && this.state.stepNumber >= 9) status = 'SCRATCH!';
     else status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
 
     let toggle;
@@ -167,7 +169,11 @@ class Game extends React.Component {
           />
         </div>
         <div className="game-info">
-          <div>{status}</div>
+          {status !== 'SCRATCH!' ? 
+            <div className="status">{status}</div> 
+            : 
+            <div className="scratch">{status}</div>
+          }
           <button
             className="button"
             onClick={() => this.toggleOrder()}
@@ -202,7 +208,7 @@ function calculateWinner(squares) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return [squares[a], [a, b, c] ];
+      return [squares[a], [a, b, c]];
     }
   }
   return null;
