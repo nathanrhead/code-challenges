@@ -93,3 +93,9 @@ ul {
   border: 2px solid white;
   border-radius: 7px;
 }
+
+#winner {
+  background-color: orange;
+  color: white;
+  border: 2px solid white;
+}
