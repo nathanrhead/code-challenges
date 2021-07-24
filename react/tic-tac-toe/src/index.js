@@ -144,7 +144,11 @@ class Game extends React.Component {
 
       return (
         <li key={move} className="list">
-          <button className="history" onClick={() => this.jumpTo(move)}>{desc}</button>
+          {order ?
+            <button className="history" onClick={() => this.jumpTo(move)}>{desc}</button>
+            :
+            <button className="history" onClick={() => this.jumpTo(history.length - move)}>{desc}</button>
+          }
         </li>
       );
     });
@@ -169,9 +173,9 @@ class Game extends React.Component {
           />
         </div>
         <div className="game-info">
-          {status !== 'SCRATCH!' ? 
-            <div className="status">{status}</div> 
-            : 
+          {status !== 'SCRATCH!' ?
+            <div className="status">{status}</div>
+            :
             <div className="scratch">{status}</div>
           }
           <button
