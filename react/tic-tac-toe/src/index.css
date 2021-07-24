@@ -100,6 +100,17 @@ ul {
   border: 2px solid white;
 }
 
+.winner {
+  background-color: orange;
+  color: white;
+  width: 20vw;
+  border-radius: 3px;
+  padding: 3vh 3vw;
+  font-size: 2.5vw;
+  margin: .5vh 0;
+
+}
+
 .scratch {
   background-color: orange;
   color: white;

@@ -11,7 +11,7 @@
 
 ## Stretch Goals (not provided in the tutorial)
 
-- [ ] Refactor the code such that each component lives in its own file in a directory called "components"; that index.js holds only the ReactDOM.render function with reference to app.js, as well as root in index.html; and app.js acts as the component hub and holder of state.
+- [x] Refactor the code such that each component lives in its own file in a directory called "components"; that index.js holds only the ReactDOM.render function with reference to app.js, as well as root in index.html; and app.js acts as the component hub and holder of state.
 - [x] Display the location for each move in the format (col, row) in the move history list.
 - [x] Bold the currently selected item in the move list.
 - [x] Rewrite the Board component to use two loops to make the squares instead of hardcoding them.
