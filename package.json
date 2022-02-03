@@ -1,0 +1,26 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanrhead/code-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanrhead/code-challenges/issues"
+  },
+  "homepage": "https://github.com/nathanrhead/code-challenges#readme",
+  "dependencies": {
+    "jest": "^27.4.7"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
