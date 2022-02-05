@@ -9,9 +9,11 @@
 function serialize(event) {
   event.preventDefault();
   const form = event.target;
-  const data = new FormData(form);
+	console.log({form});
+  const data = new FormData(form); // From MDN: "The FormData interface provides a way to easily construct a set of key/value pairs representing form fields and their values." The key-value pairs are only visible by iterating through, using a for-of loop, as below.
 	const obj = {};
 	for (let [key, value] of data) {
+		console.log({key}, {value});
 		if (obj[key] !== undefined) {
 			if (!Array.isArray(obj[key])) {
 				obj[key] = [obj[key]];
