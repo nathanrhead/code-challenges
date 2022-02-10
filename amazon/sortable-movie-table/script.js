@@ -1,3 +1,5 @@
+'use strict';
+
 // Capture the user's inputs.
 function handleSubmit(event) {
   event.preventDefault();
@@ -40,8 +42,6 @@ function renderEntry(dataArray) {
   for (let i = 0; i < x.length; i++) {
     x[i].addEventListener('click', handleDeleteRow);
   }
-
-  // sortByColumn(0);
 }
 
 // Clear the contents of the input fields after submission.
