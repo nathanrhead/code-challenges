@@ -1,0 +1,58 @@
+body {
+  margin: auto;
+  width: 50%
+}
+
+h3, h4 {
+  margin: 5px;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+}
+
+.address-carousel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.address-container {
+  display: none;
+  border: 1px solid black;
+  padding: .5rem;
+  margin: .5rem;
+  min-width: 10rem;
+}
+
+.display {
+  display: inline-block;
+}
+
+.scroll-left, .scroll-right {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid black;
+}
+
+.scroll-left {
+  border-right: 0px;
+  border-bottom: 0px;
+  transform: rotate(-45deg);
+}
+
+.scroll-right {
+  border-left: 0px;
+  border-top: 0px;
+  transform: rotate(-45deg);
+}
+
+.scroll-left:hover, .scroll-right:hover {
+  cursor: pointer;
+  border-color: orange;
+}
