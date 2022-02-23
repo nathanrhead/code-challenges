@@ -6,7 +6,7 @@ import get from './get-addresses.js';
 
 export default class Carousel {
   constructor(displayNum) {
-    this.addresses = this.getAddresses();
+    this.addresses = this.getAddresses(); // This just calls the getAddresses method and isn't used elsewhere.
     this.displayNum = displayNum;
     this.parent = document.querySelector('.address-carousel');
   }
@@ -72,7 +72,7 @@ export default class Carousel {
         this.parent.appendChild(addressContainer);
       })
     )
-    .then(next => this.displayFive(1, this.displayNum));
+    .then(() => this.displayFive(1, this.displayNum));
   }
 
   // This method displays n number of addresses, e.g., 5.
@@ -88,6 +88,5 @@ export default class Carousel {
   }
 }
   
-// const addresses = await (getAddresses());
 new Carousel(5);
 

@@ -34,7 +34,7 @@ const parent = document.querySelector('.address-carousel');
 
       parent.appendChild(addressContainer);
   }))
-  .then(next => displayFive(1, displayNum));
+  .then(() => displayFive(1, displayNum));
 })(5);
 
 function displayFive(left, right) {
