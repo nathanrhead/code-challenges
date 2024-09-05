@@ -25,4 +25,4 @@ const twoSum = function(nums, target) {
   return ('No two-sum solution.')
 };
 
-module.exports = twoSum
+module.exports = twoSum;
