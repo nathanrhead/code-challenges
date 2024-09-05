@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/nathanrhead/code-challenges#readme",
   "dependencies": {
-    "create-react-app": "^5.0.1",
-    "express": "^4.17.3",
+    "create-react-app": "^1.2.1",
+    "express": "^4.19.2",
     "jest": "^27.4.7"
   },
   "jest": {
