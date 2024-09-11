@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1726017432970" clover="3.2.0">
-  <project timestamp="1726017432970" name="All files">
-    <metrics statements="14" coveredstatements="13" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="1" elements="22" coveredelements="17" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
-    <file name="is-palindrome.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/is-palindrome/is-palindrome.js">
-      <metrics statements="14" coveredstatements="13" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="1"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="9" count="7" type="cond" truecount="3" falsecount="1"/>
-      <line num="12" count="7" type="stmt"/>
-      <line num="13" count="7" type="stmt"/>
-      <line num="14" count="7" type="stmt"/>
-      <line num="17" count="7" type="stmt"/>
-      <line num="19" count="47" type="stmt"/>
-      <line num="22" count="7" type="stmt"/>
-      <line num="23" count="7" type="stmt"/>
-      <line num="25" count="7" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="30" count="0" type="stmt"/>
-      <line num="33" count="1" type="cond" truecount="0" falsecount="1"/>
-      <line num="40" count="1" type="stmt"/>
+<coverage generated="1726091084257" clover="3.2.0">
+  <project timestamp="1726091084257" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="10" coveredelements="10" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+    <file name="invert-binary-tree.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/invert-binary-tree/invert-binary-tree.js">
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="25" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="11" type="stmt"/>
+      <line num="22" count="11" type="stmt"/>
+      <line num="25" count="11" type="stmt"/>
+      <line num="27" count="11" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

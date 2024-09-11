@@ -1,4 +1,4 @@
-# Leetcode Challenge 35: Search Insert Position | Rating: Easy
+# Leetcode Challenge 125: Valid Palindrom | Rating: Easy
 
 ## Task
 
