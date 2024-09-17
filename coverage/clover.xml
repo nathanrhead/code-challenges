@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1726249343259" clover="3.2.0">
-  <project timestamp="1726249343259" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="11" coveredconditionals="11" methods="1" coveredmethods="1" elements="21" coveredelements="21" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
-    <file name="binary-search.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/binary-search/binary-search.js">
-      <metrics statements="9" coveredstatements="9" conditionals="11" coveredconditionals="11" methods="1" coveredmethods="1"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="10" count="4" type="cond" truecount="7" falsecount="0"/>
-      <line num="13" count="3" type="stmt"/>
-      <line num="16" count="3" type="stmt"/>
-      <line num="18" count="8" type="stmt"/>
-      <line num="21" count="8" type="cond" truecount="2" falsecount="0"/>
-      <line num="22" count="4" type="stmt"/>
-      <line num="26" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="29" count="1" type="stmt"/>
+<coverage generated="1726587306164" clover="3.2.0">
+  <project timestamp="1726587306164" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2" elements="25" coveredelements="25" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+    <file name="flood-fill.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/flood-fill/flood-fill.js">
+      <metrics statements="14" coveredstatements="14" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="21" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="26" count="25" type="cond" truecount="7" falsecount="0"/>
+      <line num="29" count="6" type="stmt"/>
+      <line num="32" count="6" type="stmt"/>
+      <line num="33" count="6" type="stmt"/>
+      <line num="34" count="6" type="stmt"/>
+      <line num="35" count="6" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
