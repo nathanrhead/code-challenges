@@ -36,5 +36,5 @@ Output: 2
 ## Notes
 
 - Per LeetCode, this solution is in the 98th percentile for time and space complexity.
-- I had some help from GenAI, both ChatGPT and Claude.ai
+- I had some help from GenAI, both ChatGPT and Claude.ai, the latter of which reviewed my code for mistakes.
 - My main mistake: I was failing to return the result of the recursive call of the function when traversing.

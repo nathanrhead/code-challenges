@@ -50,5 +50,4 @@ describe ('leetcode challenge to determine the lowest common ancestor of two nod
     expect(solution(createTree([6,2,8,0,4,7,9,null,null,3,5]), 2, 4)).toEqual(2);
     expect(solution(createTree([2,1]), 2, 4)).toEqual(2);
   });
-
 });
