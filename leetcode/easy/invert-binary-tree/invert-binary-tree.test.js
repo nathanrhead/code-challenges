@@ -70,8 +70,6 @@ describe ('leetcode challenge to invert a binary tree', () => {
         resultsIndex++;
       }
 
-      // queue = [];
-
       return results;
     }
 
