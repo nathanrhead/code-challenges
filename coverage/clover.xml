@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1727202765288" clover="3.2.0">
-  <project timestamp="1727202765288" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="14" coveredelements="14" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
-    <file name="linked-list-cycle.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/linked-list-cycle/linked-list-cycle.js">
-      <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="15" count="3" type="stmt"/>
-      <line num="16" count="3" type="stmt"/>
-      <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="19" count="5" type="stmt"/>
-      <line num="20" count="5" type="stmt"/>
-      <line num="22" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="25" count="1" type="stmt"/>
-      <line num="28" count="1" type="stmt"/>
+<coverage generated="1727312668481" clover="3.2.0">
+  <project timestamp="1727312668481" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="14" coveredconditionals="8" methods="5" coveredmethods="5" elements="29" coveredelements="23" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="queue-from-stacks.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/queue-from-stacks/queue-from-stacks.js">
+      <metrics statements="10" coveredstatements="10" conditionals="14" coveredconditionals="8" methods="5" coveredmethods="5"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="26" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="35" count="1" type="cond" truecount="3" falsecount="3"/>
+      <line num="39" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="43" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
