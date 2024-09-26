@@ -36,7 +36,7 @@ class MyQueue {
   };
 
   isEmpty() {
-    return this.stackOne.length <= 0 && this.stackTwo.length <= 0 ? true : false;
+    return this.stackOne.length === 0 && this.stackTwo.length === 0;
   };
 };
 
