@@ -33,5 +33,6 @@ Output: 2
 Can you solve the problem in linear time and in O(1) space?
 
 - This solution requires the "Boyer-Moore Voting" algorithm: if a majority element exists, it will always remain after repeatedly deleting two different elements from the array.
+- Instead of deleting here, the code keeps track of the number that has the repeats the most, skipping those that don't.
 - I got the algorithm and the code from claude.ai.
 - This solution beats 97% of LeetCode solutions, where the O(n) solution beat less than 50%.
