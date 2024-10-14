@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1728757577896" clover="3.2.0">
-  <project timestamp="1728757577896" name="All files">
-    <metrics statements="19" coveredstatements="19" conditionals="14" coveredconditionals="12" methods="4" coveredmethods="4" elements="37" coveredelements="35" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
-    <file name="majority-element.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/majority-element/majority-element.js">
-      <metrics statements="19" coveredstatements="19" conditionals="14" coveredconditionals="12" methods="4" coveredmethods="4"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="9" count="3" type="cond" truecount="3" falsecount="1"/>
-      <line num="12" count="3" type="cond" truecount="1" falsecount="1"/>
-      <line num="15" count="3" type="stmt"/>
-      <line num="18" count="3" type="stmt"/>
-      <line num="19" count="13" type="stmt"/>
-      <line num="20" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="21" count="7" type="stmt"/>
-      <line num="25" count="3" type="stmt"/>
-      <line num="26" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="27" count="3" type="stmt"/>
-      <line num="31" count="3" type="stmt"/>
-      <line num="35" count="1" type="stmt"/>
-      <line num="36" count="3" type="stmt"/>
-      <line num="38" count="3" type="stmt"/>
-      <line num="39" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="40" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="43" count="3" type="stmt"/>
-      <line num="46" count="1" type="stmt"/>
+<coverage generated="1728923007379" clover="3.2.0">
+  <project timestamp="1728923007379" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2" elements="22" coveredelements="22" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
+    <file name="diameter-of-binary-tree.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/diameter-of-binary-tree/diameter-of-binary-tree.js">
+      <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="18" count="3" type="cond" truecount="5" falsecount="0"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="25" count="16" type="cond" truecount="2" falsecount="0"/>
+      <line num="27" count="7" type="stmt"/>
+      <line num="28" count="7" type="stmt"/>
+      <line num="31" count="7" type="stmt"/>
+      <line num="34" count="7" type="stmt"/>
+      <line num="37" count="2" type="stmt"/>
+      <line num="39" count="2" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
