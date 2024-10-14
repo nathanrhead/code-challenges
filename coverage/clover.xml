@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1728923007379" clover="3.2.0">
-  <project timestamp="1728923007379" name="All files">
-    <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2" elements="22" coveredelements="22" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="diameter-of-binary-tree.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/diameter-of-binary-tree/diameter-of-binary-tree.js">
-      <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
+<coverage generated="1728928278704" clover="3.2.0">
+  <project timestamp="1728928278704" name="All files">
+    <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="22" coveredelements="22" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+    <file name="middle-of-linked-list.js" path="/Users/rhead/Coding/code-challenges/leetcode/easy/middle-of-linked-list/middle-of-linked-list.js">
+      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="14" count="1" type="stmt"/>
-      <line num="16" count="3" type="stmt"/>
-      <line num="18" count="3" type="cond" truecount="5" falsecount="0"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="21" count="2" type="stmt"/>
-      <line num="25" count="16" type="cond" truecount="2" falsecount="0"/>
-      <line num="27" count="7" type="stmt"/>
-      <line num="28" count="7" type="stmt"/>
-      <line num="31" count="7" type="stmt"/>
-      <line num="34" count="7" type="stmt"/>
-      <line num="37" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="20" count="11" type="stmt"/>
+      <line num="21" count="11" type="stmt"/>
+      <line num="24" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="2" type="stmt"/>
+      <line num="34" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="5" type="stmt"/>
+      <line num="36" count="5" type="stmt"/>
       <line num="39" count="2" type="stmt"/>
-      <line num="42" count="1" type="stmt"/>
+      <line num="41" count="2" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
