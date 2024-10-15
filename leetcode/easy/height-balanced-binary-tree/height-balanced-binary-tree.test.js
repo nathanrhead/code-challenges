@@ -2,54 +2,41 @@
 
 const solution = require('./height-balanced-binary-tree');
 
-// Define the tree node.
 class Node {
-  constructor(val, left, right) {
-    this.value = (val === undefined ? 0 : val)
-    this.left = (left === undefined ? null : left)
-    this.right = (right === undefined ? null : right)
-  }
-
-
-  addNode(value) {
-    if (!this.root) {
-      this.root = new Node(value);
-      return;
-    }
-
-    let current;
-    let queue = [];
-    queue[0] = this.root;
-
-    while (queue) {
-      current = queue.shift();
-      
-      if (!current.left) {
-        current.left = new Node(value);
-        return;
-      } else {
-        queue.push(current.left);
-      }
-
-      if (!current.right) {
-        current.right = new Node(value);
-        return;
-      } else {
-        queue.push(current.right);
-      }
-    }
+  constructor(val, left = null, right = null) {
+    this.value = val;
+    this.left = left;
+    this.right = right;
   }
 }
 
 const createTree = array => {
-  const node = new Node(array[0]);
-  this.root = node;
+  if (!array.length) return null;
   
-  for (let i = 1; i < array.length; i++) {
-    node.addNode(array[i]);
-  }
+  // Create the root node
+  const root = new Node(array[0]);
+  const queue = [root];
+  let i = 1;
+  
+  while (i < array.length) {
+    const current = queue.shift();
 
-  return node;
+    // Handle the left child
+    if (array[i] !== null) {
+      current.left = new Node(array[i]);
+      queue.push(current.left);
+    }
+    i++;
+    
+    // Handle the right child
+    if (array[i] !== null) {
+      current.right = new Node(array[i]);
+      queue.push(current.right);
+    }
+    i++;
+  }
+  
+  return root;
 };
 
 describe ('leetcode challenge to determine whether a binary tree is height-balanced', () => {

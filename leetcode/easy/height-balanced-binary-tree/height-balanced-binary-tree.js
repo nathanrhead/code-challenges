@@ -17,7 +17,7 @@ const isBalanced = function(root) {
 
   // Helper function to traverse the tree recursively, check the balance and return the result.
   function checkBalance(node) {
-    if (node === null) return 0;
+    if (!node) return 0;
     
     const leftHeight = checkBalance(node.left);
 
