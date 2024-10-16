@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1729039285572" clover="3.2.0">
-  <project timestamp="1729039285572" name="All files">
-    <metrics statements="30" coveredstatements="30" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4" elements="44" coveredelements="44" complexity="0" loc="30" ncloc="30" packages="1" files="1" classes="1"/>
-    <file name="max-subarray.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/max-subarray/max-subarray.js">
-      <metrics statements="30" coveredstatements="30" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="8" count="5" type="stmt"/>
-      <line num="11" count="5" type="stmt"/>
-      <line num="13" count="19" type="stmt"/>
-      <line num="16" count="19" type="cond" truecount="2" falsecount="0"/>
-      <line num="19" count="19" type="cond" truecount="2" falsecount="0"/>
-      <line num="23" count="5" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="30" count="14" type="stmt"/>
-      <line num="31" count="14" type="stmt"/>
-      <line num="34" count="14" type="stmt"/>
-      <line num="35" count="26" type="stmt"/>
-      <line num="36" count="26" type="cond" truecount="2" falsecount="0"/>
-      <line num="37" count="20" type="stmt"/>
-      <line num="41" count="14" type="stmt"/>
-      <line num="42" count="14" type="stmt"/>
-      <line num="45" count="14" type="stmt"/>
-      <line num="46" count="20" type="stmt"/>
-      <line num="47" count="20" type="cond" truecount="2" falsecount="0"/>
-      <line num="48" count="17" type="stmt"/>
-      <line num="53" count="14" type="stmt"/>
-      <line num="58" count="33" type="cond" truecount="2" falsecount="0"/>
-      <line num="59" count="19" type="stmt"/>
-      <line num="62" count="14" type="stmt"/>
-      <line num="64" count="14" type="stmt"/>
-      <line num="65" count="14" type="stmt"/>
-      <line num="66" count="14" type="stmt"/>
-      <line num="68" count="14" type="stmt"/>
-      <line num="71" count="5" type="stmt"/>
-      <line num="74" count="1" type="stmt"/>
+<coverage generated="1729102656569" clover="3.2.0">
+  <project timestamp="1729102656569" name="All files">
+    <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="21" coveredelements="21" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+    <file name="insert-interval.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/insert-interval/insert-interval.js">
+      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="4" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="28" count="2" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="30" count="2" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
