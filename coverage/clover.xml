@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1729185807140" clover="3.2.0">
-  <project timestamp="1729185807140" name="All files">
-    <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2" elements="33" coveredelements="33" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
-    <file name="01-matrix.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/01-matrix/01-matrix.js">
-      <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="3" type="stmt"/>
-      <line num="8" count="3" type="stmt"/>
+<coverage generated="1729191575745" clover="3.2.0">
+  <project timestamp="1729191575745" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="9" coveredelements="9" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+    <file name="k-closest.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/k-closest/k-closest.js">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="7" count="1" type="stmt"/>
       <line num="9" count="3" type="stmt"/>
-      <line num="10" count="11" type="stmt"/>
-      <line num="13" count="3" type="stmt"/>
-      <line num="14" count="11" type="stmt"/>
-      <line num="15" count="33" type="cond" truecount="2" falsecount="0"/>
-      <line num="16" count="23" type="stmt"/>
-      <line num="17" count="23" type="stmt"/>
-      <line num="23" count="3" type="stmt"/>
-      <line num="26" count="3" type="stmt"/>
-      <line num="27" count="33" type="stmt"/>
-      <line num="30" count="33" type="stmt"/>
-      <line num="31" count="132" type="stmt"/>
-      <line num="33" count="132" type="cond" truecount="6" falsecount="0"/>
-      <line num="35" count="92" type="cond" truecount="2" falsecount="0"/>
-      <line num="36" count="10" type="stmt"/>
-      <line num="37" count="10" type="stmt"/>
-      <line num="43" count="3" type="stmt"/>
-      <line num="46" count="1" type="stmt"/>
+      <line num="10" count="6" type="stmt"/>
+      <line num="11" count="6" type="stmt"/>
+      <line num="14" count="6" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
