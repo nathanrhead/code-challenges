@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1729102656569" clover="3.2.0">
-  <project timestamp="1729102656569" name="All files">
-    <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="21" coveredelements="21" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
-    <file name="insert-interval.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/insert-interval/insert-interval.js">
-      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="19" count="4" type="stmt"/>
-      <line num="20" count="4" type="stmt"/>
-      <line num="21" count="4" type="stmt"/>
-      <line num="25" count="2" type="stmt"/>
-      <line num="28" count="2" type="stmt"/>
-      <line num="29" count="2" type="stmt"/>
-      <line num="30" count="2" type="stmt"/>
-      <line num="33" count="2" type="stmt"/>
-      <line num="36" count="1" type="stmt"/>
+<coverage generated="1729185807140" clover="3.2.0">
+  <project timestamp="1729185807140" name="All files">
+    <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2" elements="33" coveredelements="33" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
+    <file name="01-matrix.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/01-matrix/01-matrix.js">
+      <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="11" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="14" count="11" type="stmt"/>
+      <line num="15" count="33" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="23" type="stmt"/>
+      <line num="17" count="23" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="27" count="33" type="stmt"/>
+      <line num="30" count="33" type="stmt"/>
+      <line num="31" count="132" type="stmt"/>
+      <line num="33" count="132" type="cond" truecount="6" falsecount="0"/>
+      <line num="35" count="92" type="cond" truecount="2" falsecount="0"/>
+      <line num="36" count="10" type="stmt"/>
+      <line num="37" count="10" type="stmt"/>
+      <line num="43" count="3" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
