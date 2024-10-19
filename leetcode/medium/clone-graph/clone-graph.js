@@ -18,6 +18,7 @@ class Node {
   }
 }
 
+// This DFS approach returns an adjacency list for testing purposes.
 const cloneGraph = function(node) {  
   // If the input node is empty, return null
   if (!node) return [];
@@ -55,6 +56,54 @@ const cloneGraph = function(node) {
   });
 
   return adjacencyList;
+};
+
+// This working DFS solution was posted by akunopaka on LeetCode. It won't pass the tests here, which require an adjacency list.
+const cloneGraphDFS = function(node) {
+  if (!node) return null;
+
+  const dfs = (node, visited) => {
+      if (visited.has(node)) return visited.get(node);
+
+      const newNode = new Node(node.val);
+
+      visited.set(node, newNode);
+      
+      for (let neighbor of node.neighbors) {
+          newNode.neighbors.push(dfs(neighbor, visited));
+      }
+
+      return newNode;
+  }
+
+  return dfs(node, new Map());
+};
+
+// This BFS approach was posted by akunopaka on LeetCode. It also won't pass the tests here, which require an adjacency list.
+const cloneGraphBFS = function (node) {
+  if (!node) return null;
+
+  const newNode = new Node(node.val);
+  const queue = [node];
+  const visited = new Map();
+
+  visited.set(node, newNode);
+
+  while (queue.length > 0) {
+    const currentNode = queue.shift();
+
+    for (let neighbor of currentNode.neighbors) {
+      if (!visited.has(neighbor)) {
+        const newNeighbor = new Node(neighbor.val);
+        
+        queue.push(neighbor);
+        visited.set(neighbor, newNeighbor);
+      }
+
+      visited.get(currentNode).neighbors.push(visited.get(neighbor));
+    }
+  }
+  return newNode;
 };
 
 module.exports = cloneGraph;
