@@ -2,7 +2,7 @@
 
 ## Task
 
-At Audible, a subscriber can gift an audiobook from his/her library to any other non-subscriber to kickstart their audiobook journey. The first-time subscriber can receive up to a maximum of N audiobooks from their friends/relatives. When a non-subscriber receives an audiobook, we can infer that the two may be related. Similarly, if the non-subscriber receives gifted books from two other subscribers, we can infer that all of them are related and the three of them form a group.
+A subscriber can gift an audiobook from his/her library to any other non-subscriber to kickstart their audiobook journey. The first-time subscriber can receive up to a maximum of N audiobooks from their friends/relatives. When a non-subscriber receives an audiobook, we can infer that the two may be related. Similarly, if the non-subscriber receives gifted books from two other subscribers, we can infer that all of them are related and the three of them form a group.
 
 More formally, a group is composed of all of the people who know one another, whether directly or transitively.
 
