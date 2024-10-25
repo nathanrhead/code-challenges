@@ -1,16 +1,16 @@
 'use strict';
 
-const Trie = require('./trie');
+const Trie = require('./trie-class');
 
 describe ('LeetCode challenge to implement a trie class', () => {
   const trie = new Trie();
 
   it ('instantiates a new trie instance', () => {
-    expect(trie.root).toEqual({});
+    expect(trie.root.isEndOfWord).toBeFalsy();
   });
 
   it ('inserts a word', () => {
-    trie.insert('apple');
+    trie.insert('apple');    
     expect(trie.root).not.toEqual({});
   });
 
