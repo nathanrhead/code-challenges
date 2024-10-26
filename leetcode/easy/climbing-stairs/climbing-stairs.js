@@ -41,4 +41,29 @@ function climbStairsMemoized(n, memo = {}) {
   return memo[n];
 }
 
-module.exports = { climbStairs, climbStairsRecursively, climbStairsMemoized };
+// Given n steps to climb and an array X that contains the sizes of steps you can take (e.g.,, 1, 3, or 5 steps), you need to determine how many distinct ways you can reach the top.
+// The recurrence relation is: f(n) = f(n - x_1) + f(n - x_2) + f(n - x_3) + ... where  x_i  are the elements of the array X (i.e., the different step sizes).
+
+function climbStairsVariableStepSizes(n, steps, memo = {}) {
+  // Check if the result is already computed
+  if (n in memo) return memo[n];
+
+  // Base cases.
+  if (n === 0) return 1; // 1 way to stay on the ground.
+  if (n < 0) return 0;   // No way to climb negative steps.
+
+  let totalWays = 0;
+  
+  // Iterate over each step size in the steps array.
+  for (let step of steps) {
+      totalWays += climbStairs(n - step, steps); // Recursive call.
+  }
+
+  // Store the result in the memo object
+  memo[n] = totalWays;
+
+  // Return the totaly number of ways.
+  return totalWays;
+}
+
+module.exports = { climbStairs, climbStairsRecursively, climbStairsMemoized, climbStairsVariableStepSizes };
