@@ -35,5 +35,18 @@ Explanation: There are three ways to climb to the top.
 
 ## Notes
 
-- I found this approach posted by niits in the solutions section on LeetCode, but I put together my own whiteboard of the solution.
-- The solution is O(n) for time, because of the for-loop, but O(1) for space, because a finite number of variables are created.
+This solution came from ChatGPT, but I put together the whiteboard.
+
+The key insight is that to get to step n, you have only two choices:
+
+- come from n-1 (taking 1 step from the previous step);
+- or come from n-2 (taking 2 steps from the step before).
+
+So, the recurrence relation is: f(n) = f(n-1) + f(n-2).
+
+This is a good example of dynamic programming, because it can be broken down into a discreet sub-problem, solved iteratively (or recursively), and reuse the solution to the sub-problem to optimize space and time complexity.
+
+## Big O
+
+- Time: O(n) because of the for-loop
+- Space: O(1) because a finite number of constant variables are created.
