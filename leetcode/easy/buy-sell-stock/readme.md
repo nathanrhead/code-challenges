@@ -33,4 +33,9 @@ Output: 1
 
 ### Source of the Solution
 
-- Md Farhan Zaman via the LeetCode Solutions tab.
+- ChatGPT.
+
+## Big O
+
+- Time: O(n) because the for-loop visits every value of the prices array.
+- Space: O(1) because the buy, profit, and the loop counter are constant variables.
