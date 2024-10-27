@@ -1,14 +1,14 @@
 'use strict';
 
-const solution = require('./substring-no-repeat');
+const { lengthOfLongestSubstring } = require('./substring-no-repeat');
 
 describe ('leetcode challenge to find a string\'s longest substring that doesn\'t have repeated characters', () => {
   it ('returns the length of the longest substring without repeated characters', () => {
-    expect(solution("abcabcbb")).toEqual(3);
-    expect(solution("bbbbb")).toEqual(1);
-    expect(solution("pwwkew")).toEqual(3);
-    expect(solution("")).toEqual(0);
-    expect(solution(" ")).toEqual(1);
-    expect(solution("dvdf")).toEqual(3);
+    expect(lengthOfLongestSubstring("abcabcbb")).toEqual(3);
+    expect(lengthOfLongestSubstring("bbbbb")).toEqual(1);
+    expect(lengthOfLongestSubstring("pwwkew")).toEqual(3);
+    expect(lengthOfLongestSubstring("")).toEqual(0);
+    expect(lengthOfLongestSubstring(" ")).toEqual(1);
+    expect(lengthOfLongestSubstring("dvdf")).toEqual(3);
   });
 });
