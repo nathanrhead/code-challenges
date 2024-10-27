@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">94.73% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>18/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90% </span>
+                <span class="strong">85.71% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>9/10</span>
+                <span class='fraction'>6/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -85,47 +85,89 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">40x</span>
+<span class="cline-any cline-yes">40x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
  * @param {string} s
- * @return {number}
-*/
+ * @return {string}
+ */
 &nbsp;
 const longestPalindrome = function(s) {
-  if (s.length &lt;= 0) return 0;
-  if (s.length === 1) return 1; 
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (s.length &lt;= 1) <span class="cstat-no" title="statement not covered" >return s;</span>
 &nbsp;
-  const hashmap = {};
-  let pCount = 0;
+  let start = 0;
+  let end = 0;
 &nbsp;
-  for (let char of s) {
-    if (!hashmap[char]) hashmap[char] = 1;
-    else hashmap[char] = hashmap[char] + 1;
-    if (hashmap[char] % 2 === 0) pCount = pCount + 2;
+  function expandAroundCenter(left, right) {
+    while (left &gt;= 0 &amp;&amp; right &lt; s.length &amp;&amp; s[left] === s[right]) {
+      left--;
+      right++;
+    }
+&nbsp;
+    return right - left - 1; // Length of the palindrome
   }
 &nbsp;
-  return s.length &gt; pCount ? pCount + 1 : <span class="branch-1 cbranch-no" title="branch not covered" >pCount;</span>
+  for (let i = 0; i &lt; s.length; i++) {
+    const len1 = expandAroundCenter(i, i); // Odd length palindrome
+    const len2 = expandAroundCenter(i, i + 1); // Even length palindrome
+    const maxLen = Math.max(len1, len2);
+&nbsp;
+    // If the new panlindrome is longer than the last longest one, update the start and end indices.
+    if (maxLen &gt; end - start) { 
+      start = i - Math.floor((maxLen - 1) / 2); // For example, if the palindrome length is 5 (odd-length) and i is the center, start moves 2 positions left of i.
+      end = i + Math.floor(maxLen / 2); // For example, if the palindrome length is 5, end moves 2 positions right of i.
+    }
+  }
+&nbsp;
+  return s.substring(start, end + 1);
 };
 &nbsp;
 module.exports = longestPalindrome;
@@ -136,7 +178,7 @@ module.exports = longestPalindrome;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Oct 01 2024 09:29:42 GMT-0700 (Pacific Daylight Time)
+                at Sun Oct 27 2024 11:04:45 GMT-0700 (Pacific Daylight Time)
             </div>
         <script src="prettify.js"></script>
         <script>

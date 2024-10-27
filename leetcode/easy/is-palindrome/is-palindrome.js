@@ -8,7 +8,7 @@ const isPalindrome = function(s) {
   // Check input.
   if (!s || typeof s !== 'string') return;
  
-  // Regex for all non-alphanumeric characters and make all remaining characters lower case.
+  // Regex for all non-alphanumeric characters and make all remaining characters lowercase.
   const regex = /[^a-zA-Z0-9]/gm;
   const sFiltered = s.replace(regex, '').toLowerCase();
   const stack = [];
@@ -23,15 +23,8 @@ const isPalindrome = function(s) {
 };
 
 // Solution by t1o2mm3y on LeetCode.
-const isPalindromeJSMethods = s => {
-    return filterAlphaNumeric(s) == filterAlphaNumeric(s).split('').reverse().join('')
-};
+const isPalindromeJSMethods = s => filterAlphaNumeric(s) === filterAlphaNumeric(s).split('').reverse().join('');
 
-const filterAlphaNumeric = (s, nonAlphaNumeric = new RegExp('[^a-z0-9]','gi')) => s
-    .toLowerCase()   
-    .replace(nonAlphaNumeric, '')
+const filterAlphaNumeric = (s, nonAlphaNumeric = new RegExp('[^a-z0-9]','gi')) => s.toLowerCase().replace(nonAlphaNumeric, '');
 
-// Solution by 
-
-
-module.exports = isPalindrome;
+module.exports = { isPalindrome, isPalindromeJSMethods };
