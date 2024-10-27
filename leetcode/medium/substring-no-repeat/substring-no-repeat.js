@@ -11,7 +11,7 @@ const lengthOfLongestSubstring = function(s) {
   let maxLength = 0;
   
   for (let right = 0; right < s.length; right++) {
-    // If a character is already in the set, remove the characters left of and including it.
+    // If a character is already in the set, remove the characters left of and including it, incrementing the left pointer in the process.
     while (charSet.has(s[right])) {
       charSet.delete(s[left]);
       left++;

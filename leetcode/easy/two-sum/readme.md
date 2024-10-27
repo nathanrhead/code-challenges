@@ -35,4 +35,4 @@ Output: [0,1]
 
 ### Notes and sources
 
-There are two solutions in this js file, one is mine and the other is Leetcode's, which is much, much more elegant, though no faster or space-sensitive than mine. Both work. The whiteboard reflects Leetcode's solution.
+There are two solutions in this js file, one is mine and the other is LeetCode's, which is much, much more elegant, though no faster or space-sensitive than mine. Both work. The whiteboard reflects Leetcode's solution.

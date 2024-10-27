@@ -30,7 +30,7 @@ Output: [8,9,9,9,0,0,0,1]
 
 ## Notes
 
-- ChatGPT's solution, which adds the numbers of the two lists, starting with the ones place, and creates a new node for the ones place of the result, carrying any remainder over to the next loop (tens, hundreds, etc.).
+- ChatGPT's solution: adds the numbers of the two lists, starting with the ones place, and creates a new node for the ones place of the result, carrying any remainder over to the next loop (tens, hundreds, etc.).
 - Big O
   - Time: O(max(m, n)), where m is the number of nodes in the first linked list and n is the number of nodes in the second linked list.
   - Space:  O(max(m, n)) due to the creation of new nodes for the result linked list, which will store a digit for each corresponding sum of the input nodes.

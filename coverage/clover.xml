@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1729992239751" clover="3.2.0">
-  <project timestamp="1729992239751" name="All files">
-    <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="16" coveredelements="16" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="substring-no-repeat.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/substring-no-repeat/substring-no-repeat.js">
-      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+<coverage generated="1730048834421" clover="3.2.0">
+  <project timestamp="1730048834421" name="All files">
+    <metrics statements="19" coveredstatements="19" conditionals="13" coveredconditionals="13" methods="2" coveredmethods="2" elements="34" coveredelements="34" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
+    <file name="number-of-islands.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/number-of-islands/number-of-islands.js">
+      <metrics statements="19" coveredstatements="19" conditionals="13" coveredconditionals="13" methods="2" coveredmethods="2"/>
       <line num="6" count="1" type="stmt"/>
-      <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="9" count="5" type="stmt"/>
-      <line num="10" count="5" type="stmt"/>
-      <line num="11" count="5" type="stmt"/>
-      <line num="13" count="5" type="stmt"/>
-      <line num="15" count="24" type="stmt"/>
-      <line num="16" count="15" type="stmt"/>
-      <line num="17" count="15" type="stmt"/>
-      <line num="21" count="24" type="stmt"/>
-      <line num="24" count="24" type="stmt"/>
-      <line num="27" count="5" type="stmt"/>
-      <line num="30" count="1" type="stmt"/>
+      <line num="7" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="16" count="68" type="cond" truecount="7" falsecount="0"/>
+      <line num="19" count="16" type="stmt"/>
+      <line num="22" count="16" type="stmt"/>
+      <line num="23" count="16" type="stmt"/>
+      <line num="24" count="16" type="stmt"/>
+      <line num="25" count="16" type="stmt"/>
+      <line num="29" count="3" type="stmt"/>
+      <line num="30" count="9" type="stmt"/>
+      <line num="31" count="41" type="cond" truecount="2" falsecount="0"/>
+      <line num="32" count="4" type="stmt"/>
+      <line num="33" count="4" type="stmt"/>
+      <line num="38" count="3" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
