@@ -5,27 +5,22 @@
  * @return {boolean}
  */
 
-const isValid = s => {  
+const isValid = s => {
   // Use stacks to track in and out.
   const stack = [];
+  const bracketPairs = {
+    ')': '(',
+    '}': '{',
+    ']': '['
+  };
 
-  for (let i = 0; i < s.length; i++) {
-      if (s[i] === '(' || s[i] === '{' || s[i] === '[') { // Handle opening brackets.
-          // Push opening brackets onto the top of the stack.
-          stack.push(s[i]);
-      } else { // Hanle closing brakcets.
-          // If the closing bracket matches the last opening bracket, pop it off the stack.
-          if (s[i] === ')') {
-              if (stack[stack.length-1] === '(') stack.pop();
-              else return false;
-          } else if (s[i] === '}') {
-              if (stack[stack.length-1] === '{') stack.pop();
-              else return false;
-          } else if (s[i] === ']') {
-              if (stack[stack.length-1] === '[') stack.pop();
-              else return false;
-          }
-      }
+  for (const char of s) {
+    // Push opening brackets onto the top of the stack.
+    if (char === '(' || char === '{' || char === '[') stack.push(char);
+    
+    // If the closing bracket matches the last opening bracket, pop it off the stack.
+    else      
+      if (!stack.length || stack.pop() !== bracketPairs[char]) return false;
   }
 
   return stack.length <= 0 ? true : false;

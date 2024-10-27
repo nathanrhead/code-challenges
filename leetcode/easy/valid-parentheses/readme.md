@@ -34,3 +34,8 @@ Output: true
 
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
+
+### Big O
+
+- Time: O(n) because each character of the string is potentially visited.
+- Space: O(n) because of the stack used to store and compare brackets, which could consist of the entire string, i.e., all opening brackets.
