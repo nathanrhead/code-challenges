@@ -23,8 +23,7 @@ function area(i, j, grid) {
   count += area(i-1, j, grid);
   count += area(i, j-1, grid);
   count += area(i, j+1, grid);
-  // console.log({i}, {j});
-  // console.log({count});
+
   return count;
 }
 

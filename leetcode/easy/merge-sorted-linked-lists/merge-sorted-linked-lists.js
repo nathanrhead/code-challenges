@@ -22,7 +22,7 @@ function mergeTwoSortedLists(list1, list2) {
       current = current.next;
   }
   
-  // If one list is longer, append the rest of it
+  // If one list is longer, append the rest of it.
   if (list1 !== null) {
       current.next = list1;
   }

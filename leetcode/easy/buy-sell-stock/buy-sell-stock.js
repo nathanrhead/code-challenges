@@ -7,7 +7,7 @@ const maxProfit = prices => {
     // Base cases.
     if (!prices.length || prices.length === 1) return 0;
 
-  // Memoized cache for dynamic programming.
+  // Cache for dynamic programming: reusing the results of solving the sub-problem.
   let buy = prices[0]; // Find the smallest number in the array.
   let profit = 0; // Find the biggest difference between prices[i] and the smallest number in the array.
 

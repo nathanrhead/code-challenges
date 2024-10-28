@@ -1,6 +1,6 @@
 # LeetCode Challenge #542: 01 Matrix | Rating: Medium
 
-Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell.
+Given an m x n binary matrix, return the distance of the nearest 0 for each cell.
 
 The distance between two adjacent cells is 1.
 
@@ -35,8 +35,8 @@ Output: [[0,0,0],[0,1,0],[1,2,1]]
 1. Initialize a queue with the coordinates of all 0s in the matrix and a matrix with the distance of all 1s set to infinity.
 2. For each cell in the queue:
 
-- Check its neighboring cells (up, down, left, right) in the distance matrix.
-- If the distance to any neighboring cell is greater than the current cell’s distance + 1, update the neighboring cell’s distance by changing it to the cell's distance + 1 and add that neighboring cell's coordinates to the queue.
+    - Check its neighboring cells (up, down, left, right) in the distance matrix.
+    - If the distance to any neighboring cell is greater than the current cell’s distance + 1, update the neighboring cell’s distance by changing it to the cell's distance + 1 and add that neighboring cell's coordinates to the queue.
 
 3. Return the modified matrix where each cell contains the distance to the nearest 0.
 
