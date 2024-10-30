@@ -1,39 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1730232278996" clover="3.2.0">
-  <project timestamp="1730232278996" name="All files">
-    <metrics statements="30" coveredstatements="17" conditionals="25" coveredconditionals="19" methods="3" coveredmethods="2" elements="58" coveredelements="38" complexity="0" loc="30" ncloc="30" packages="1" files="1" classes="1"/>
-    <file name="longest-lexicographical-substring.js" path="/Users/rhead/Coding/code-challenges/amazon/longest-lexicographical-substring/longest-lexicographical-substring.js">
-      <metrics statements="30" coveredstatements="17" conditionals="25" coveredconditionals="19" methods="3" coveredmethods="2"/>
-      <line num="3" count="11" type="cond" truecount="4" falsecount="0"/>
-      <line num="5" count="9" type="stmt"/>
-      <line num="7" count="9" type="stmt"/>
-      <line num="8" count="10057" type="stmt"/>
-      <line num="9" count="49995188" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="40057" type="stmt"/>
+<coverage generated="1730248245735" clover="3.2.0">
+  <project timestamp="1730248245735" name="All files">
+    <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2" elements="31" coveredelements="31" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
+    <file name="rectangles-game.js" path="/Users/rhead/Coding/code-challenges/amazon/rectangles-game/rectangles-game.js">
+      <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <line num="11" count="9" type="stmt"/>
+      <line num="12" count="9" type="stmt"/>
       <line num="15" count="9" type="stmt"/>
-      <line num="20" count="11" type="cond" truecount="4" falsecount="0"/>
-      <line num="22" count="10" type="stmt"/>
-      <line num="23" count="10" type="stmt"/>
-      <line num="25" count="10" type="stmt"/>
-      <line num="31" count="10048" type="cond" truecount="5" falsecount="0"/>
-      <line num="33" count="10040" type="cond" truecount="2" falsecount="0"/>
-      <line num="34" count="10025" type="stmt"/>
-      <line num="36" count="15" type="cond" truecount="2" falsecount="0"/>
-      <line num="43" count="10" type="stmt"/>
-      <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="48" count="0" type="stmt"/>
-      <line num="51" count="0" type="stmt"/>
-      <line num="52" count="0" type="stmt"/>
-      <line num="53" count="0" type="stmt"/>
-      <line num="54" count="0" type="stmt"/>
-      <line num="58" count="0" type="stmt"/>
-      <line num="61" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="62" count="0" type="stmt"/>
-      <line num="65" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="66" count="0" type="stmt"/>
-      <line num="67" count="0" type="stmt"/>
-      <line num="71" count="0" type="stmt"/>
-      <line num="74" count="1" type="stmt"/>
+      <line num="16" count="43" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="10" type="stmt"/>
+      <line num="23" count="9" type="stmt"/>
+      <line num="24" count="18" type="stmt"/>
+      <line num="25" count="18" type="stmt"/>
+      <line num="26" count="18" type="stmt"/>
+      <line num="29" count="18" type="stmt"/>
+      <line num="30" count="18" type="stmt"/>
+      <line num="31" count="18" type="stmt"/>
+      <line num="35" count="18" type="cond" truecount="4" falsecount="0"/>
+      <line num="36" count="3" type="stmt"/>
+      <line num="37" count="3" type="stmt"/>
+      <line num="45" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="50" count="9" type="stmt"/>
+      <line num="51" count="10" type="stmt"/>
+      <line num="54" count="9" type="stmt"/>
+      <line num="57" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
