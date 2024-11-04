@@ -24,7 +24,8 @@ Output: [0,0,9,0,0]
 
 ## Big O
 
-The two-pass method avoids the need for division and keeps the time complexity at O(n) with constant space complexity (not counting the output array), which is critical for large datasets. It achieves the task without unnecessary complexity by leveraging the multiplicative properties of the numbers.
+- Time: The two-pass method avoids the need for division and keeps the time complexity at O(n) with constant space complexity (not counting the output array), which is critical for large datasets. It achieves the task without unnecessary complexity by leveraging the multiplicative properties of the numbers.
+- Space: O(1), the output array being a given and not counted in auxiliary space.
 
 ## Notes
 
@@ -34,6 +35,6 @@ The two-pass method avoids the need for division and keeps the time complexity a
   - Left: In the first pass, we compute and store the cumulative product of all elements before the current index. This step builds a foundation for the final product.
   - Right: In the second pass, we modify the previously stored left products by multiplying them with the cumulative product of all elements after the current index. This results in the final output for each index, combining both the left and right contributions.
 
-## Follow up
+## Whiteboard
 
-Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)
+![A whiteboard of the problem domain, visual, and code.](./product-of-array-sans-self.png)
