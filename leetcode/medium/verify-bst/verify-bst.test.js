@@ -67,7 +67,6 @@ describe ('LeetCode challenge to validate the structure of a binary-search tree'
 
     expect(isValidBSTElegant(tree.addNodesFromArray([2,2,2]))).toBeFalsy();
     expect(isValidBSTElegant(tree.addNodesFromArray([5,4,6,null,null,3,7]))).toBeFalsy();
-
   });
 });
 

@@ -17,6 +17,12 @@ Input: root = [5,1,4,null,null,3,6]
 Output: false  
 Explanation: The root node's value is 5 but its right child's value is 4.
 
+## Example 3
+
+Input: root = [5,4,6,null,null,3,7]
+Output: false
+Explanation: The root node's value is 5, but a righthand descendent of it, 3, is less than 5.
+
 ## Constraints
 
 - The number of nodes in the tree is in the range [1, 104].
@@ -28,7 +34,7 @@ When validating a binary-search tree, both depth-first search and breadth-first 
 
 I. Depth-First Search (DFS)
 
-1. Implementation using recursion (in-order traversal) or with an explicit stack, with the recursive approach tending to be simpler and more intuitive.
+1. Implementation using recursion (in-order traversal) or with an explicit stack, the recursive approach tending to be simpler and more intuitive.
 2. Time Complexity: O(n), where n is the number of nodes, as each node is visited once.
 3. Space Complexity: O(h), where h is the height of the tree; in the worst case (for a skewed tree), this can be O(n), but for a balanced tree, it’s O(log n).
 4. Advantages

@@ -41,11 +41,11 @@ const isValidBstUsingDfs = function(root) {
   let lastVal, bstBoolean = true;
 
   function _walk(node) {
-      if (!node || !bstBoolean) return;
-      if (node.left) _walk(node.left);
-      if (lastVal >= node.value) bstBoolean = false;
-      else lastVal = node.value;
-      if (node.right) _walk(node.right);
+    if (!node || !bstBoolean) return;
+    if (node.left) _walk(node.left);
+    if (lastVal >= node.value) bstBoolean = false;
+    else lastVal = node.value;
+    if (node.right) _walk(node.right);
   }
 
   _walk(root);
@@ -53,15 +53,15 @@ const isValidBstUsingDfs = function(root) {
   return bstBoolean;
 };
 
-// This is ChatGPT's much more elegant, approach.
-function isValidBSTElegant(root, min = -Infinity, max = Infinity) {
-  // Base case: if we reach a null node, it's valid by definition
+// This is ChatGPT's much more elegant approach.
+function isValidBSTElegant(root, min = -Infinity, max = Infinity) {  
+  // Base case: if we reach a null node, it's valid by definition.
   if (!root) return true;
 
-  // The current node's value must be in the range defined by min and max
+  // The current node's value must be in the range defined by min and max.
   if (root.value <= min || root.value >= max) return false;
 
-  // Recursively check the left and right subtrees
+  // Recursively check the left and right subtrees: left has to keep getting smaller and right has to keep getting bigger.
   return isValidBSTElegant(root.left, min, root.value) && isValidBSTElegant(root.right, root.value, max);
 }
 
