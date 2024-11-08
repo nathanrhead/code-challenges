@@ -2,8 +2,8 @@
 
 const solution = require('./number-of-islands');
 
-describe ('leetcode challenge to return the k-closest points to the origin (0,0)', () => {
-  it ('returns an array of arrays representing the coordinates of the k-closest points', () => {
+describe ('leetcode challenge to find the number of islands in a matrix', () => {
+  it ('returns the number of islands in a matrix', () => {
     expect(solution([
       ["1","1","1","1","0"],
       ["1","1","0","1","0"],
