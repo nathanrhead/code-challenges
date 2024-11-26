@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1732561885698" clover="3.2.0">
-  <project timestamp="1732561885698" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="24" coveredelements="24" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
-    <file name="partition-equal-subset-sum.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/partition-equal-subset-sum/partition-equal-subset-sum.js">
-      <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+<coverage generated="1732645646227" clover="3.2.0">
+  <project timestamp="1732645646227" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1" elements="31" coveredelements="31" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+    <file name="atoi.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/atoi/atoi.js">
+      <metrics statements="14" coveredstatements="14" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1"/>
       <line num="5" count="1" type="stmt"/>
-      <line num="6" count="8" type="stmt"/>
-      <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="23" count="1" type="stmt"/>
-      <line num="25" count="4" type="stmt"/>
-      <line num="27" count="4" type="stmt"/>
-      <line num="29" count="26" type="stmt"/>
-      <line num="30" count="26" type="stmt"/>
-      <line num="31" count="26" type="stmt"/>
-      <line num="35" count="26" type="cond" truecount="2" falsecount="0"/>
-      <line num="37" count="26" type="stmt"/>
-      <line num="41" count="4" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
-      <line num="47" count="1" type="stmt"/>
+      <line num="6" count="10" type="stmt"/>
+      <line num="9" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="10" type="cond" truecount="5" falsecount="0"/>
+      <line num="13" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="4" type="stmt"/>
+      <line num="18" count="10" type="cond" truecount="3" falsecount="0"/>
+      <line num="19" count="37" type="stmt"/>
+      <line num="20" count="37" type="stmt"/>
+      <line num="24" count="10" type="stmt"/>
+      <line num="27" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="28" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="30" count="8" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
