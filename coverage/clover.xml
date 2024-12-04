@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733247326274" clover="3.2.0">
-  <project timestamp="1733247326275" name="All files">
-    <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="29" coveredelements="29" complexity="0" loc="22" ncloc="22" packages="1" files="1" classes="1"/>
-    <file name="bt-rightside-view.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/bt-rightside-view/bt-rightside-view.js">
-      <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="14" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="16" count="4" type="stmt"/>
-      <line num="17" count="4" type="stmt"/>
-      <line num="19" count="4" type="stmt"/>
+<coverage generated="1733332763076" clover="3.2.0">
+  <project timestamp="1733332763076" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="14" coveredelements="14" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
+    <file name="unique-paths.js" path="/Users/rhead/Coding/code-challenges/leetcode/medium/unique-paths/unique-paths.js">
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
       <line num="20" count="12" type="stmt"/>
+      <line num="22" count="12" type="stmt"/>
       <line num="24" count="12" type="stmt"/>
-      <line num="25" count="16" type="stmt"/>
-      <line num="27" count="16" type="stmt"/>
-      <line num="29" count="16" type="stmt"/>
-      <line num="31" count="16" type="stmt"/>
-      <line num="33" count="16" type="stmt"/>
-      <line num="35" count="16" type="cond" truecount="2" falsecount="0"/>
-      <line num="36" count="5" type="stmt"/>
-      <line num="37" count="5" type="stmt"/>
-      <line num="39" count="16" type="cond" truecount="2" falsecount="0"/>
-      <line num="40" count="7" type="stmt"/>
-      <line num="41" count="7" type="stmt"/>
-      <line num="45" count="12" type="stmt"/>
-      <line num="47" count="12" type="stmt"/>
-      <line num="50" count="4" type="stmt"/>
-      <line num="53" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
