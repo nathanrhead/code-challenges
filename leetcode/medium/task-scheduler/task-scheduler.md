@@ -46,3 +46,8 @@ There are only two types of tasks, A and B, which need to be separated by 3 inte
     - Use less frequent tasks to fill idle slots.
     - If there are enough tasks to fill all idle slots, there won’t be any idle time; otherwise, calculate the remaining idle time.
 7. Return the total time: The total time is the number of tasks plus idle intervals (if any).
+
+## Big O
+
+- Time: O(n) for the for loop, where n is the number of tasks.
+- Space: O(1) for the taskCounts object, where n is the maximum number of distinct tasks, which can't be more than 26, each task being represented by an uppercase English letter.
