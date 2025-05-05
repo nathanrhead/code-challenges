@@ -23,14 +23,10 @@ function mergeTwoSortedLists(list1, list2) {
   }
   
   // If one list is longer, append the rest of it.
-  if (list1 !== null) {
-      current.next = list1;
-  }
-  if (list2 !== null) {
-      current.next = list2;
-  }
+  if (list1 !== null) current.next = list1;
+  if (list2 !== null) current.next = list2;
   
-  // Return the head of the merged list (skip the dummy node)
+  // Return the head of the merged list (skip the dummy node).
   return linkedListToArray(dummy.next);
 };
 
