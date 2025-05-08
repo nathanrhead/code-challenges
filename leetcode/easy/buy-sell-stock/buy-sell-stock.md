@@ -70,4 +70,3 @@ Output: 5
 
 - Time: O(n) because the for-loop visits every value of the prices array.
 - Space: O(1) because the buy, profit, and the loop counter are constant variables.
-
