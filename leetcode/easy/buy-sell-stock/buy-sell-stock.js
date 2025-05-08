@@ -4,13 +4,14 @@
  */
 
 const maxProfit = prices => {
-    // Base cases.
-    if (!prices.length || prices.length === 1) return 0;
+  // Base cases.
+  if (!prices.length || prices.length === 1) return 0;
 
-  // Cache for dynamic programming: reusing the results of solving the sub-problem.
+  // Cache for dynamic programming: reusing the results of the sub-problem.
   let buy = prices[0]; // Find the smallest number in the array.
   let profit = 0; // Find the biggest difference between prices[i] and the smallest number in the array.
 
+  // Loop through the prices array to set the buy and profit variables.
   for (let i = 1; i < prices.length; i++) {
     buy = Math.min(prices[i], buy);
     profit = Math.max(profit, prices[i] - buy);
